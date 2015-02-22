@@ -1,0 +1,99 @@
+% neuer Zeitslot
+\newcommand{\talktime}{9:99}
+\newcommand{\newtimeslot}[1]{\newpage\renewcommand{\talktime}{#1}}
+
+% \konferenztag initialisieren
+\newcommand{\konferenztag}{KeinTag}
+
+
+% Hintergrund setzen
+\def\mittwoch{Mittwoch}
+\def\donnerstag{Donnerstag}
+\def\freitag{Freitag}
+\newcommand{\setpagebackground}{ %
+%	\ifthispageodd{\ThisCenterWallPaper{1.0}{freitag-ungerade}}{\ThisCenterWallPaper{1.0}{freitag-gerade}}%
+	\ifthenelse{\equal{\konferenztag}{\mittwoch}}{ %
+		\ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}%
+	}{}
+	\ifthenelse{\equal{\konferenztag}{\donnerstag}}{ %
+		\ifthispageodd{\ThisCenterWallPaper{1.0}{donnerstag-ungerade}}{\ThisCenterWallPaper{1.0}{donnerstag-gerade}}%
+	}{}
+	\ifthenelse{\equal{\konferenztag}{\freitag}}{ %
+		\ifthispageodd{\ThisCenterWallPaper{1.0}{freitag-ungerade}}{\ThisCenterWallPaper{1.0}{freitag-gerade}}%
+	}{}
+}
+
+% Titeltabelle setzen
+\newcommand{\setabstract}[6]{
+	% 1. Sprecher
+	% 2. Titel
+	% 3. Untertitel
+	% 4. Abstract (Text)
+	% 5. Farbe
+	% 6. Raum
+	\thispagestyle{scrheadings} 
+	\setlength\tabcolsep{0pt}
+	% \setlength{\fboxsep}{0pt}
+	\noindent\colorbox{#5}{%
+		\noindent\begin{tabu}{X[5L]r}
+			\emph{#1} % Sprecher
+			&
+			\talktime
+			\tabularnewline
+			{\par\noindent\large \sectfont #2}% % Titel
+			&
+			#6
+			\tabularnewline
+			\issubtitleempty{#3}
+%			\multicolumn{2}{p{\linewidth}}{\issubtitleempty{#3}}
+%			\tabularnewline
+		\end{tabu}%
+	}
+	%
+	\vspace{0.5em}%
+	\par\noindent #4 \par% % Abstract
+	\setpagebackground%
+	\vspace{2em} % Abstand zum nächsten Talk
+}
+
+
+
+% Setzen des Untertitels
+% muss ausgelagert und durch \makeatletter umgeben sein
+\makeatletter
+\newcommand{\issubtitleempty}[1]{%
+%	\@ifnotmtarg{#1}{\vspace*{0.35em}{\par\noindent\bfseries \normalsize \sectfont #1}}}
+%	\@ifnotmtarg{#1}{{\noindent\bfseries \normalsize \sectfont #1}}}
+	\@ifnotmtarg{#1}{\multicolumn{2}{p{\linewidth}}{\noindent\bfseries \normalsize \sectfont #1}\tabularnewline}
+}
+\makeatother
+
+% Abstrakt Saal S10
+\newcommand{\abstractZehn}[4]%
+{%
+	\definecolor{zehn}{cmyk}{ 0 0.13 0.35 0.03}
+	\setabstract{#1}{#2}{#3}{#4}{zehn}{S\,10}
+}
+
+% Abstract Saal S2
+\newcommand{\abstractZwei}[4]%
+{%
+	\definecolor{zwei}{cmyk}{ .1 0 .17 .05}
+	\setabstract{#1}{#2}{#3}{#4}{zwei}{S\,2}
+}
+
+% Abstract Saal S1
+\newcommand{\abstractEins}[4]%
+{%
+	\definecolor{eins}{cmyk}{ 0 .18 .06 .10}
+	\setabstract{#1}{#2}{#3}{#4}{eins}{S\,1}
+}
+
+% Abstract Aula
+\newcommand{\abstractAula}[4]%
+{%
+	\setabstract{#1}{#2}{#3}{#4}{orange}{Aula}
+}
+
+% viel zu lang
+\newcommand{\zulang}{Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. }
