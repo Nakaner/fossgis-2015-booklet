@@ -42,14 +42,15 @@
 	% \setlength{\fboxsep}{0pt}
 	\noindent\colorbox{#5}{%
 		\noindent\begin{tabu}{X[5L]r}
-			\emph{#1} % Sprecher
-			&
-			\talktime
-			\tabularnewline
-			{\par\noindent\large \sectfont #2}% % Titel
-			&
-			#6
-			\tabularnewline
+			\isspeakerempty{#1}{#2}{#6}
+%			\emph{#1} % Sprecher
+%			&
+%			\talktime
+%			\tabularnewline
+%			{\par\noindent\large \sectfont #2}% % Titel
+%			&
+%			#6
+%			\tabularnewline
 			\issubtitleempty{#3}
 %			\multicolumn{2}{p{\linewidth}}{\issubtitleempty{#3}}
 %			\tabularnewline
@@ -62,7 +63,33 @@
 	\setlength\tabcolsep{6pt} % Spaltenpadding wieder auf Default setzen
 }
 
-
+% Setzen des Referenten, falls vorhanden
+% Wir gehen davon aus, dass es einen Untertitel nur dann gibt, wenn es auch einen Referenten gibt
+\makeatletter
+\newcommand{\isspeakerempty}[3]{%
+	% Arguments:
+	% 1. speaker
+	% 2. title
+	% 3. room
+	\@ifmtarg{#1}{%
+			\par\noindent\large \sectfont #2% % Titel
+			&
+			#3, \talktime
+			\tabularnewline
+		}
+		{
+			\emph{#1} % Sprecher
+			&
+			\talktime
+			\tabularnewline
+			{\par\noindent\large \sectfont #2}% % Titel
+			&
+			#3
+			\tabularnewline
+		}
+		
+}
+\makeatother
 
 % Setzen des Untertitels
 % muss ausgelagert und durch \makeatletter umgeben sein
