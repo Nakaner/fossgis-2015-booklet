@@ -54,6 +54,8 @@
 	Projektes in dem eine Kartenanwendung umgesetzt wurde. Besonderes Augenmerk lag bei der Entwicklung auf der 
 	schnellen und leichten anpassbar- und Wiederverwendbarkeit der Komponenten.}
 
+% Alles weitere, was im Abstract steht ist relativ logisch. Außerdem ist der Rest des Absatzes auch mit inhaltlichen Fehlern gespickt, 
+% die man niemanden lesen lassen möchte.
 %\abstractEins{Nicole Beringer}{OSM auf Räder}{}{Sind die OSM Karten soweit, um den Wettbewerb mit kommerziellen Karten im Autonavigationsbereich aufzunehmen?}
 \abstractEins{Nicole Beringer}{OSM auf Räder}{}{%
 	Sind die OSM-Karten soweit, um den Wettbewerb mit kommerziellen Karten im Autonavigationsbereich aufzunehmen?	
@@ -67,39 +69,110 @@
 %
 \abstractZwei{Stefan Ziegler}{Kreisbogen in QGIS}{}{Neben den gängigen Vektorelementen (Punkt, Linie, Polygon) unterstützt QGIS neu Kreisbogengeometrien. Es ist jetzt möglich solche Geometrietypen (ST\_CircularString, ST\_CompoundCurve, ST\_CurvePolygon etc.) aus einer Postgis-Datenbank zu lesen, anzuzeigen, zu editieren und wieder zu speichern.}
 
-\abstractZehn{Christian Mayer}{GeoExt}{Ein ExtJS basiertes Rich-Client-WebGIS-Framework in Zeiten von AngularJS und Konsorten}{Der Vortrag stellt die neueste Version von GeoExt vor und zeigt auf, welches Handwerkszeug dem Entwickler hier bereitsgestellt wird. Unterschiede zwischen ExtJS und anderen Bibliotheken werden benannt, dies kann als Diskussionsgrundlage für die Wahl einer Bibliothek dienen. Schwerpunkt ist die Betrachtung der zukünftigen Entwicklung von GeoExt.}
+\abstractZehn{Christian Mayer und Marc Jansen}{GeoExt}{Ein ExtJS basiertes Rich-Client-WebGIS-Framework in Zeiten von AngularJS und Konsorten}{%
+	Der Vortrag stellt die neueste Version von GeoExt vor und zeigt auf, welches Handwerkszeug dem Entwickler 
+	hier bereitsgestellt wird. Unterschiede zwischen ExtJS und anderen Bibliotheken werden benannt, dies kann 
+	als Diskussionsgrundlage für die Wahl einer Bibliothek dienen. Schwerpunkt ist die Betrachtung der zukünftigen 
+	Entwicklung von GeoExt.}
 
-\abstractEins{Robert Klemm}{Automatisierte OSM Aufbereitung und Analyse von LKW-Mautstrecken in Deutschland}{}{Das beschriebene Tool und die damit erzeugten Mautdaten erleichtern dem OSM-Mappern die Arbeit. Für ihn validiert das Tool durch Routinganalyse die OSM-Daten, basierend auf dem Tagging-Schema mit mautbezogenen Routingparametern, wie Fahrzeug-, Achs-, Gewichtsklasse und Betreiber. Es lässt sich beispielsweise die schnellste und günstigste Strecke, bezogen auf die zu entrichtende Straßenmaut, ermitteln und grafisch anzeigen.}
+%\abstractEins{Robert Klemm}{Automatisierte OSM Aufbereitung und Analyse von LKW-Mautstrecken in Deutschland}{}{Das beschriebene Tool und die damit erzeugten Mautdaten erleichtern dem OSM-Mappern die Arbeit. Für ihn validiert das Tool durch Routinganalyse die OSM-Daten, basierend auf dem Tagging-Schema mit mautbezogenen Routingparametern, wie Fahrzeug-, Achs-, Gewichtsklasse und Betreiber. Es lässt sich beispielsweise die schnellste und günstigste Strecke, bezogen auf die zu entrichtende Straßenmaut, ermitteln und grafisch anzeigen.}
+\abstractEins{Robert Klemm}{Automatisierte OSM Aufbereitung und Analyse von LKW-Mautstrecken in Deutschland}{}{%
+	Das beschriebene Tool erstellt mautpflichtigen Strecken anhand von Mautpunkten der Bundesanstalt für Straßenwesen (BASt). 
+	Die Daten der BASt bezüglich der Strecken werden so umgewandelt, 
+	dass sie in OSM abgelegt werden können. Dazu wird ein Taggingschema vorgeschlagen.
+	
+	Das beschriebene Tool und die damit erzeugten Mautdaten erleichtern dem Mappern die Arbeit. Für sie 
+	validiert das Tool durch Routinganalyse die OSM-Daten, basierend auf dem Taggingschema mit mautbezogenen 
+	Routingparametern, wie Fahrzeug-, Achs-, Gewichtsklasse und Betreiber. Es lässt sich beispielsweise die 
+	schnellste und günstigste Strecke, bezogen auf die zu entrichtende Straßenmaut, ermitteln und grafisch 
+	anzeigen.}
 %
 
 \newtimeslot{11:15}
 % 11:15
 %
-\abstractZwei{Mila Frerichs}{Geospatial Ruby}{}{Der Talk »Geospatial Ruby« gibt einen Überblick darüber, was mit Ruby im Geo Bereich möglich ist. Viele große erfolgreiche Webprojekte sind mit Ruby und dem dazugehörigen Webframework Rails umgesetzt worden. }
-\abstractZehn{Jörg Thomsen}{MapServer Pro-Tipps}{Das 'Do what I want' Know How für den UMN MapServer}{Über das Basiswissen hinaus gehende Funktionen des MapServers, wie PHP-Fassaden, JOINs mit Datei basierten Datenquellen, ColorRanges, Buildt-In Openlayers-Client, Cluster von Punktobjekten, Geomtransform, IP-Zugriffsbeschränkung sind Themen des Vortrages. }
-\abstractEins{Claas Leiner}{Daten aus OSM extrahieren und in QGIS weiterverarbeiten }{Am Beispiel der Verteilung von Windanlagen in Deutschland}{Die OSM-Daten enthalten viele umweltrelevante Informationen, die auf den veröffentlichten Webkarten nicht offensichtlich erkennbar sind. Mit Hilfe von QGIS lassen sich diese Informationen auswerten und in neue aussagekräftigen Karten umsetzen.}
+\abstractZwei{Mila Frerichs}{Geospatial Ruby}{}{%
+	Der Talk gibt einen Überblick darüber, was mit Ruby im Geo Bereich möglich ist. Viele große erfolgreiche Webprojekte sind mit Ruby und dem dazugehörigen Webframework Rails umgesetzt worden. 
+	
+	 Der Fokus dieses Vortrags liegt auf drei wichtigen Bibliotheken terraformer.rb, rgeo und SimpleTile.}
+
+%\abstractZehn{Jörg Thomsen}{MapServer Pro-Tipps}{Das \emph{Do what I want} Know How für den UMN MapServer}{%
+%	Über das Basiswissen hinaus gehende Funktionen des MapServers, wie PHP-Fassaden, JOINs mit Datei basierten Datenquellen, ColorRanges, Buildt-In Openlayers-Client, Cluster von Punktobjekten, Geomtransform, IP-Zugriffsbeschränkung sind Themen des Vortrages. }
+\abstractZehn{Jörg Thomsen}{MapServer Pro-Tipps}{Das \emph{Do what I want} Know How für den UMN MapServer}{%
+	MapServer ist bekannt für seine Zuverlässigkeit, Performance und Stabilität. Gerne wird aber auch über die Konfiguration mit den Mapfiles gestöhnt. Dabei bietet gerade diese Art der Konfiguration Möglichkeiten, die tief in der Dokumentation versteckt sind und die bei kniffligen Augaben wirklich hilfreich sein können. Die meisten Anwender kennen nur die Basis-Konfigurationen, aber wer weiß schon dass es einen eingebauten OpenLayers-Client gibt, der es ermögicht nur mit einem Mapfile eine interakive Karte zu veröffentlichen, wie man Linien mit Pfeilspitzen versieht, Geometrien glättet oder den Zugriff auf MapServer-WMS direkt im Mapfile auf bestimmte IP-Adressen beschränken kann?
+	
+	Weitere Themen des Vortrags sind PHP-Fassaden, JOINs mit Datei basierten Datenquellen, ColorRanges, Cluster von Punktobjekten, Geomtransform und IP-Zugriffsbeschränkungen.}
+
+%\abstractEins{Claas Leiner}{Daten aus OSM extrahieren und in QGIS weiterverarbeiten }{Am Beispiel der Verteilung von Windanlagen in Deutschland}{Die OSM-Daten enthalten viele umweltrelevante Informationen, die auf den veröffentlichten Webkarten nicht offensichtlich erkennbar sind. Mit Hilfe von QGIS lassen sich diese Informationen auswerten und in neue aussagekräftigen Karten umsetzen.}
+\abstractEins{Claas Leiner}{Daten aus OSM extrahieren und in QGIS weiterverarbeiten}{Am Beispiel der Verteilung von Windanlagen in Deutschland}{%
+	Der Vortrag erläutert die Fragestellung am Beispiel der Verteilung von Windkraftanlagen in Deutschland. Angefangen vom Import der deutschlandweiten OSM-Daten in eine PostGis-Datenbank, über die Abfrage der WKA-Standorte bis hin zur Präsentation der Verteilung in einer farbigen Flächendichtekarte, die aus einer interpolierten Rasteroberfläche erzeugt worden ist, welche die Anzahl der Windanlagen im Umkreis von 20\,km darstellt. Dabei kamen Abfrage- und Geoverarbeitungswerkzeuge aus QGIS sowie das GRASS-Modul zur Spline-Interpolation (v.surf.rst) zur Anwendung.}
 %
 
 \newtimeslot{11:45}
 % 11:45
 %
-\abstractZwei{Alexey Valikov}{Jsonix: OGC Web Services in JSON}{nie mehr XML in JavaScript-Apps verarbeiten, mit Jsonix spricht JSON mit den OGC Web Services }{Wie kann man mit den OGC Web Services in reinem JSON (statt XML) sprechen? Mit Jsonix, einem mächtigen JavaScript-Tool für XML<->JSON Konvertierung. Es gibt Live-Demos von WMS, WFS, CSW sowie OL3 WPS Client.}
-\abstractZehn{Oliver Tonnhofer}{Mapnik oder MapServer}{...wer macht die schönsten Karten}{Mit Mapnik und MapServer stehen zwei OpenSource Kartenrenderer zur Verfügung, die in Geschwindigkeit, Funktionsumfang und Bildqualität kaum Wünsche übrig lassen. Aber welche Software nehme ich für mein Projekt?}
-\abstractEins{Jochen Topf}{taginfo und wie es die Welt sah}{}{Das OpenStreetMap-Projekt organisiert seine Daten über ein offenes Tagging-Schema. Jeder kann neue Objekte und Tags erfinden und in der OSM-Datenbank speichern. Dieser Vortrag stellt den Web-Dienst "taginfo" vor, der Informationen zu Tags aus verschiedenen Quellen darstellt und Mappern so hilft, die Übersicht zu behalten. Der Vortrag geht sowohl auf die alltägliche Nutzung als auch auf weniger bekannte Seiten des Dienstes ein.}
+%\abstractZwei{Alexey Valikov}{Jsonix: OGC Web Services in JSON}{Nie mehr XML in JavaScript-Apps verarbeiten, mit Jsonix spricht JSON mit den OGC Web Services }{Wie kann man mit den OGC Web Services in reinem JSON (statt XML) sprechen? Mit Jsonix, einem mächtigen JavaScript-Tool für XML<->JSON Konvertierung. Es gibt Live-Demos von WMS, WFS, CSW sowie OL3 WPS Client.}
+\abstractZwei{Alexey Valikov}{Jsonix: OGC Web Services in JSON}{}{%
+	JSON hat wahrscheinlich XML schon längst als "lingua franca" ersetzt. 
+	Es ist viel leichtgewichtiger und einfacher zu verwenden als XML, vor 
+	allem in den JavaScript-basierten Web-Apps.
+	
+	Das Web GIS Umfeld wird von JavaScript-Bibliotheken wie OpenLayers und Leaflet dominiert. 
+	Für die gehört JSON sowieso zur Muttersprache. Aber die OGC-Standards sind fast alle XML-basiert 
+	und durch XML Schemata spezifiziert.
+	
+	Jsonix ist eine Open-Source Bibliothek für die XML<->JS Konvertierung, die genau das möglich macht. 
+	Mit Jsonix kann man ein XML Schema nehmen und daraus eine Mapping-Datei erzeugen.
+	Dieser Vortrag gibt eine Überblick von Jsonix und zeigt es Live in WMS, WFS, CSW sowie OL3 WPS Client Demos vor.}
+
+%\abstractZehn{Oliver Tonnhofer}{Mapnik oder MapServer}{...wer macht die schönsten Karten}{Mit Mapnik und MapServer stehen zwei OpenSource Kartenrenderer zur Verfügung, die in Geschwindigkeit, Funktionsumfang und Bildqualität kaum Wünsche übrig lassen. Aber welche Software nehme ich für mein Projekt?}
+\abstractZehn{Oliver Tonnhofer}{Mapnik oder MapServer}{Wer macht die schönsten Kartenß}{%
+	Mit Mapnik und MapServer stehen zwei OpenSource Kartenrenderer zur Verfügung, die in Geschwindigkeit, 
+	Funktionsumfang und Bildqualität kaum Wünsche übrig lassen. Aber welche Software nehme ich für mein Projekt?
+	
+	Der Vortrag geht auf die kleinen und großen Unterschiede zwischen Mapnik und MapServer ein. Für welche Einsatzzwecke ist MapServer besser geeignet? Was kann Mapnik besonders gut? Wie können die Renderer in Anwendungen und Server integriert werden? Gibt es überhaupt nennenswerte Unterschiede?}
+
+\abstractEins{Jochen Topf}{Taginfo und wie es die Welt sah}{}{%
+	Das OpenStreetMap-Projekt organisiert seine Daten über ein offenes Taggingschema. 
+	Jeder kann neue Objekte und Tags erfinden und in der OSM-Datenbank speichern. 
+	Dieser Vortrag stellt den Web-Dienst "taginfo" vor, der Informationen zu Tags aus 
+	verschiedenen Quellen darstellt und Mappern so hilft, die Übersicht zu behalten. 
+	Der Vortrag geht sowohl auf die alltägliche Nutzung als auch auf weniger bekannte Seiten des Dienstes ein.}
 %
 
 \newtimeslot{12:15}
 % 12:15
 %
 \abstractZwei{Christian Mayer}{Serverseitiges JavaScript und GIS}{Mit Node.js und npm die Welt beherrschen}{Der Vortrag gibt eine allgemeine Einführung in die Node.js-Welt und zeigt wie mit Node.js geo-relevante Probleme, wie das Einlesen von GIS-Datenformaten sowie die Verarbeitung von Geodaten möglich wird. Ebenso wird eine Übersicht von nützlichen Node.js-Modulen aus dem GIS-Bereich sowie Beispielanwendungen vorgestellt.}
-\abstractZehn{Daniel Koch}{GeoServer in action}{Fortgeschrittene Möglichkeiten beim Einsatz des GeoServers}{GeoServer in action - Fortgeschrittene Möglichkeiten beim Einsatz des GeoServers. Es geht um Kompilieren, Schnittstellenverwendung, Extensions, Performance-Tuning, GeoWebCache-Einsatz, Troubleshooting und Stolperfallen.}
-\abstractEins{Peter Barth}{Crowd-Sourced Elevation}{DIY DEM}{Dieser Vortrag zeigt einen neuen Ansatz auf, wie mit handelsüblichen Smartphones ein hochgenaues digitales Höhenmodell mit Hilfe von Crowd-Sourcing erzeugt werden kann, das sowohl hinsichtlich Auflösung als auch Genauigkeit SRTM weit überlegen ist.}
+
+%\abstractZehn{Daniel Koch}{GeoServer in action}{Fortgeschrittene Möglichkeiten beim Einsatz des GeoServers}{GeoServer in action - Fortgeschrittene Möglichkeiten beim Einsatz des GeoServers. Es geht um Kompilieren, Schnittstellenverwendung, Extensions, Performance-Tuning, GeoWebCache-Einsatz, Troubleshooting und Stolperfallen.}
+\abstractZehn{Daniel Koch}{GeoServer in action}{Fortgeschrittene Möglichkeiten beim Einsatz des GeoServers}{%
+	Der GeoServer ist ein weithin bekannter und mächtiger OpenSource Kartenserver. Sofern man die Umgebung eingerichtet hat, ist sowohl die Installation als auch die Konfiguration von ersten WMS- und WFS-Layern sehr einfach. In diesem Vortrag wird auf die typischen Anforderungen eines "GeoServers in action" eingegangen. Der Vortrag fokussiert sich also weniger auf die "Out-of-the-box"-Verwendung des GeoServers, sondern beleuchtet vielmehr fortgeschrittene Möglichkeiten beim Einsatz dieser Software.
+	
+	Themen des Vortrags sind das Kompilieren, die Verwendung der REST-Schnittstelle, Extensions, Performance-Tuning, GeoWebCache-Einsatz, Troubleshooting und Stolperfallen.}
+
+%\abstractEins{Peter Barth}{Crowd-Sourced Elevation}{DIY DEM}{Dieser Vortrag zeigt einen neuen Ansatz auf, wie mit handelsüblichen Smartphones ein hochgenaues digitales Höhenmodell mit Hilfe von Crowd-Sourcing erzeugt werden kann, das sowohl hinsichtlich Auflösung als auch Genauigkeit SRTM weit überlegen ist.}
+\abstractEins{Peter Barth}{Crowd-Sourced Elevation}{DIY DEM}{%	
+	Digitale Höhenmodelle können für eine Vielzahl von Anwendungen im OpenStreetMap-Umfeld verwendet werden. 
+	In Renderstilen werden sie z.\,B. für Schummerungen oder Höhenlinien verwendet. 
+	Aber auch bei Routinganwendungen gibt es verschiedenste Gründe, das Geländemodell mit zu beachten: 
+	Fahrradfahrer, Rollstuhlfahrer aber auch Energiesparen bei Elektromobilität.
+	
+	Mit SRTM steht ein genaues Höhenmodell mit nahezu globaler Abdeckung gemeinfrei zur Verfügung und 
+	erst kürzlich wurde auch die Version mit einer Auflösung von einer Bogensekunde freigegeben. Aber reicht das?
+	
+	Nach einem Überblick über das Thema Höhenmodelle und die verschiedenen Datenquellen wird anhand von Experimenten und 
+	deren Auswertung gezeigt, wie man mit einem handelsüblichen Smartphone selbst ein Höhenmodell erstellen 
+	kann. Eignen sich die Methoden für Crowdsourcing und wie gut ist das Ergebnis verglichen mit SRTM?}
 %
 
 \newtimeslot{13:45}
 % 13:45
 %
-\abstractAula{Katja Haferkorn}{FOSSGIS Zukunftswerkstatt}{Menschen begeistern im FOSSGIS-Verein mitzuwirken }{Wer steckt hinter dem FOSSGIS e.V.? Um diese Frage zu beantworten veranstaltet der FOSSGIS e.V eine Zukunftswerkstatt. Erfahren Sie mehr über Ziele, Strukturen und Menschen im Verein. Lassen Sie sich begeistern von der Idee gemeinsam etwas zu bewegen. }
+\abstractAula{Katja Haferkorn}{FOSSGIS Zukunftswerkstatt}{Menschen begeistern im FOSSGIS-Verein mitzuwirken}{%
+	Wer steckt hinter dem FOSSGIS e.V.? Um diese Frage zu beantworten veranstaltet der FOSSGIS e.V eine Zukunftswerkstatt. 
+	Erfahren Sie mehr über Ziele, Strukturen und Menschen im Verein. 
+	Lassen Sie sich begeistern von der Idee gemeinsam etwas zu bewegen. }
 %
 % 14:00
 %
@@ -108,7 +181,15 @@
 \newtimeslot{14:30}
 % 14:30
 %
-\abstractZwei{Jakob Tworek}{Erfassung von Landnutzungsveränderungen mit FOSS Image Processing Tools}{Change Detection mit QGIS - Landnutzungs- und -bedeckungsveränderungen erfassen }{}
+\abstractZwei{Jakob Tworek}{Erfassung von Landnutzungsveränderungen mit FOSS Image Processing Tools}%
+{%Change Detection mit QGIS - Landnutzungs- und -bedeckungsveränderungen erfassen
+	}{%
+	In diesem Vortrag wird eine Masterarbeit am Geographischen Institut der Universität Bonn vorgestellt. Im Rahmen dieser Masterarbeit 
+	wurde zwei Change-Detection-Verfahren mit freier Bildverarbeitungssoftware angewandt und evaluiert.
+	Zu den verwendeten Programmen zählen das Semi-Automatic Classification Plugin und Image Processing Tools der Orfeo Toolbox 
+	und SAGA im Rahmen des Processing Framework von QGIS.
+	}
+
 \abstractZehn{Daniel Kastl}{Routing in der Datenbank}{Kürzeste-Wege-Berechnung und mehr mit pgRouting}{Die pgRouting-Erweiterung ermöglicht es, auf Daten in einer PostgreSQL-Datenbank eine kürzeste-Wege-Suche und andere netzorientierte Algorithmen anzuwenden. Neben den etablierten Funktionen sind für die nahe Zukunft eine Reihe neuer Algorithmen zur Tourenplanung zu erwarten. Dieser Vortrag stellt die verschiedenen Algorithmen vor und geht darauf ein, wie die Struktur der Netzdaten die Leistung des Systems beeinflussen kann.}
 \abstractEins{Sascha L. Teichmann}{MTSatellite}{Echtzeit Webmapping für Minetest-Welten oder Spiel-Spass mit GIS}{Der Vortrag stellt die Freie Software MTSatellite vor, ein Live-Webmapping System für das Open World/Sandbox-Spiel Minetest. Der Vortrag führt das System vor und gibt eine teils vertiefende Übersicht über die eingesetzen Technologien sowohl aus GIS- als auch aus Sicht eines passionierten Minetest-Spielers.}
 %
