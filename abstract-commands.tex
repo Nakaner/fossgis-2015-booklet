@@ -27,9 +27,9 @@
 }
 
 
+% Titeltabelle setzen
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
 
-% Titeltabelle setzen
 \newcommand{\setabstract}[6]{
 	% 1. Sprecher
 	% 2. Titel
@@ -59,6 +59,7 @@
 	\isabstractempty{#4}%
 	\setpagebackground%
 	\vspace{0.5em}% Abstand zum nächsten Talk, auch wenn es keinen Abstract gibt
+	\setlength\tabcolsep{6pt} % Spaltenpadding wieder auf Default setzen
 }
 
 
@@ -81,24 +82,27 @@
 }
 \makeatother
 
-% Abstrakt Saal S10
+% Farben definieren
+\definecolor{eins}{cmyk}{ 0 .18 .06 .10}
+\definecolor{zwei}{cmyk}{ .1 0 .17 .05}
+\definecolor{zehn}{cmyk}{ 0 0.13 0.35 0.03}
+\definecolor{aula}{cmyk}{ 0.2 0 0.05 0.13}
+
+% Abstract Saal S10
 \newcommand{\abstractZehn}[4]%
 {%
-	\definecolor{zehn}{cmyk}{ 0 0.13 0.35 0.03}
 	\setabstract{#1}{#2}{#3}{#4}{zehn}{S\,10}
 }
 
 % Abstract Saal S2
 \newcommand{\abstractZwei}[4]%
 {%
-	\definecolor{zwei}{cmyk}{ .1 0 .17 .05}
 	\setabstract{#1}{#2}{#3}{#4}{zwei}{S\,2}
 }
 
 % Abstract Saal S1
 \newcommand{\abstractEins}[4]%
 {%
-	\definecolor{eins}{cmyk}{ 0 .18 .06 .10}
 	\setabstract{#1}{#2}{#3}{#4}{eins}{S\,1}
 }
 

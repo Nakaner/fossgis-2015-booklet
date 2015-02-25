@@ -1,0 +1,95 @@
+% Definitionen und Befehle
+\newcolumntype{Z}[1]{>{\raggedright\arraybackslash}p{#1}}%
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}%
+\newcommand{\talk}[2]%
+{%
+	& \textbf{#1} \newline \emph{#2}
+}%
+% Titel -- Redner
+
+\newcommand{\otherevent}[1]%
+{%
+	& \textbf{#1}
+}%
+
+\newcommand{\aulaevent}[2]%
+{%
+	&
+	\multicolumn{3}{C{8cm}}{
+		\textbf{#1} (Aula) \par \emph{#2}
+	}
+}%
+
+\newcommand{\coffeespace}{\vspace{0.4em}}
+
+% Farben definieren
+\definecolor{commongray}{gray}{.9}
+%\vspace{-1.2em}
+\renewcommand{\arraystretch}{1.4}
+
+
+\newpage
+\begin{landscape}
+\ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}
+\section*{Mittwoch}\label{mittwoch}
+	\begin{longtabu}{lZ{2.93cm}Z{2.93cm}Z{2.93cm}}
+		& \multicolumn{1}{c}{\cellcolor{eins} S\,1}
+		& \multicolumn{1}{c}{\cellcolor{zwei} S\,2}
+		& \multicolumn{1}{c}{\cellcolor{zehn} S\,10} \tabularnewline
+		\endhead
+		10:30
+		\otherevent{Was ist Open-Source? Wie funktioniert das?}\coffeespace
+		\talk{}{}
+		\coffeespace\tabularnewline
+		\rowcolor{commongray}
+		12:00 & \multicolumn{3}{c}{%
+			\parbox[c]{24pt}{%
+				\includegraphics[height=10pt]{cafe}%
+			}
+			Pause} \tabularnewline
+		13:00 
+		\aulaevent{Eröffnung}{Dominik Helle und Olaf Knopp}
+		\coffeespace\tabularnewline
+		13:30
+		\aulaevent{Nicht zuschauen -- mitmachen!}{Frederik Ramm}
+		\coffeespace\tabularnewline
+		14:00
+		\aulaevent{Softwarewartung für Open-Source -- ein Widerspruch?}{Till Adams}
+		\coffeespace\tabularnewline
+		14:30
+		\aulaevent{Lightning Talks}{}
+		\coffeespace\tabularnewline
+		\rowcolor{commongray}
+		15:00 & \multicolumn{3}{c}{%
+			\parbox[c]{24pt}{%
+				\includegraphics[height=10pt]{cafe}%
+			}
+			Kaffeepause} \tabularnewline
+		15:30
+		\talk{Welches Münster meinen sie?}{Marc Tobias Metten}
+		\talk{Herausforderungen bei der Umsetzung der INSPIRE-Richtlinie}{Jürgen Weichand}
+		\talk{Neues von QGIS 2.8}{Horst Düster}
+		\coffeespace\tabularnewline
+		16:00
+		\talk{Offene Geodaten -- Lage von Orten im Vergleich}{Thomas Brinkhoff}
+		\talk{GeoPortal.rlp}{Armin Retterath}
+		\talk{QGIS-Plugins}{Pirmin Kalberer}
+		\coffeespace\tabularnewline
+		16:30
+		\talk{OSM-Tagging in Wikidata}{Tim Alder}
+		\talk{Geonetzwerk metropoleRuhr}{David Arndt}
+		\talk{Neues vom QGIS Print Composer und Atlas-Seriendruck}{Andreas Neumann}
+		\coffeespace\tabularnewline
+		17:00
+		\talk{Ein GeoWiki auf OSM-Basis}{Klaus Stein}
+		\talk{Spatial Index von Solr}{Tim Balschmiter}
+		\talk{QField for QGIS}{Marco Bernasocchi}
+		\coffeespace\tabularnewline
+		17:30
+		\otherevent{ows.js Entwickler-Treffen}
+		\otherevent{Mapbender-Anwendertreffen}
+		\otherevent{xPlanBox-Anwendertreffen}
+		\coffeespace\tabularnewline
+	\end{longtabu}	
+\end{landscape}
+	
