@@ -23,6 +23,9 @@
 	}{}
 }
 
+
+\newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
+
 % Titeltabelle setzen
 \newcommand{\setabstract}[6]{
 	% 1. Sprecher
@@ -64,7 +67,7 @@
 \newcommand{\issubtitleempty}[1]{%
 %	\@ifnotmtarg{#1}{\vspace*{0.35em}{\par\noindent\bfseries \normalsize \sectfont #1}}}
 %	\@ifnotmtarg{#1}{{\noindent\bfseries \normalsize \sectfont #1}}}
-	\@ifnotmtarg{#1}{\multicolumn{2}{p{\linewidth}}{\noindent\bfseries \normalsize \sectfont #1}\tabularnewline}
+	\@ifnotmtarg{#1}{\multicolumn{2}{Y{\linewidth}}{\vspace{-0.1em} \noindent\bfseries \normalsize \sectfont #1}\tabularnewline}
 }
 \makeatother
 
