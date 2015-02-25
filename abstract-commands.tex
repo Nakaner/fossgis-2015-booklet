@@ -2,6 +2,9 @@
 \newcommand{\talktime}{9:99}
 \newcommand{\newtimeslot}[1]{\newpage\renewcommand{\talktime}{#1}}
 
+% neuer Zeitslot ohne Seitenumbruch
+\newcommand{\newsmalltimeslot}[1]{\renewcommand{\talktime}{#1}}
+
 % \konferenztag initialisieren
 \newcommand{\konferenztag}{KeinTag}
 
@@ -53,10 +56,9 @@
 		\end{tabu}%
 	}
 	%
-	\vspace{0.5em}%
-	\par\noindent #4 \par% % Abstract
+	\isabstractempty{#4}%
 	\setpagebackground%
-	\vspace{2em} % Abstand zum nächsten Talk
+	\vspace{0.5em}% Abstand zum nächsten Talk, auch wenn es keinen Abstract gibt
 }
 
 
@@ -65,9 +67,17 @@
 % muss ausgelagert und durch \makeatletter umgeben sein
 \makeatletter
 \newcommand{\issubtitleempty}[1]{%
-%	\@ifnotmtarg{#1}{\vspace*{0.35em}{\par\noindent\bfseries \normalsize \sectfont #1}}}
-%	\@ifnotmtarg{#1}{{\noindent\bfseries \normalsize \sectfont #1}}}
-	\@ifnotmtarg{#1}{\multicolumn{2}{Y{\linewidth}}{\vspace{-0.1em} \noindent\bfseries \normalsize \sectfont #1}\tabularnewline}
+	\@ifnotmtarg{#1}{\multicolumn{2}{Y{\linewidth}}{\vspace{-0.6em} \noindent\bfseries \normalsize \sectfont #1}\tabularnewline}
+}
+\makeatother
+
+% Setzen des Abstracts, falls vorhanden
+% muss ausgelagert und durch \makeatletter umgeben sein
+\makeatletter
+\newcommand{\isabstractempty}[1]{%
+		\vspace{0.5em}%
+		\par\noindent #1 \par% % Abstract
+		\vspace{1.5em}% Abstand zum nächsten Talk, auch wenn es einen Abstract gibt
 }
 \makeatother
 
@@ -96,6 +106,13 @@
 \newcommand{\abstractAula}[4]%
 {%
 	\setabstract{#1}{#2}{#3}{#4}{orange}{Aula}
+}
+
+% Abstract Senatssaal
+%TODO Farbe ändern
+\newcommand{\abstractSenatssaal}[4]%
+{%
+	\setabstract{#1}{#2}{#3}{#4}{orange}{Senatssaal}
 }
 
 % viel zu lang
