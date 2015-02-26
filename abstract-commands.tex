@@ -103,47 +103,54 @@
 % muss ausgelagert und durch \makeatletter umgeben sein
 \makeatletter
 \newcommand{\isabstractempty}[1]{%
-		\vspace{0.5em}%
-		\par\noindent #1 \par% % Abstract
+		\vspace{0.5em}\newline%
+		%\par\noindent 
+		#1 \par% % Abstract
 		\vspace{1.5em}% Abstand zum nächsten Talk, auch wenn es einen Abstract gibt
 }
 \makeatother
 
 % Farben definieren
-\definecolor{eins}{cmyk}{ 0 .18 .06 .10}
+%\definecolor{eins}{cmyk}{ 0 .18 .06 .10}
+\definecolor{eins}{cmyk}{ 0 .13 .04 .08}
 \definecolor{zwei}{cmyk}{ .1 0 .17 .05}
-\definecolor{zehn}{cmyk}{ 0 0.13 0.35 0.03}
-\definecolor{aula}{cmyk}{ 0.2 0 0.05 0.13}
+\definecolor{hellorange}{cmyk}{ 0 0.13 0.35 0.03}
+%\definecolor{aula}{cmyk}{ 0.2 0 0.05 0.13}
+\definecolor{aula}{cmyk}{ 0.13 0 0.04 0.11}
+\definecolor{geoblau}{cmyk}{ 0.2 .02 0 .01}
+\definecolor{dezentrot}{cmyk}{ 0 .17 0.21 .04}
+\definecolor{hellgelb}{cmyk}{ 0 .02 0.26 0}
+\definecolor{hellgruen}{cmyk}{ 0.05 .0 0.17 0.05}
 
 % Abstract Saal S10
 \newcommand{\abstractZehn}[4]%
 {%
-	\setabstract{#1}{#2}{#3}{#4}{zehn}{S\,10}
+	\setabstract{#1}{#2}{#3}{#4}{geoblau}{S\,10}
 }
 
 % Abstract Saal S2
 \newcommand{\abstractZwei}[4]%
 {%
-	\setabstract{#1}{#2}{#3}{#4}{zwei}{S\,2}
+	\setabstract{#1}{#2}{#3}{#4}{hellgelb}{S\,2}
 }
 
 % Abstract Saal S1
 \newcommand{\abstractEins}[4]%
 {%
-	\setabstract{#1}{#2}{#3}{#4}{eins}{S\,1}
+	\setabstract{#1}{#2}{#3}{#4}{hellgruen}{S\,1}
 }
 
 % Abstract Aula
 \newcommand{\abstractAula}[4]%
 {%
-	\setabstract{#1}{#2}{#3}{#4}{orange}{Aula}
+	\setabstract{#1}{#2}{#3}{#4}{hellorange}{Aula}
 }
 
 % Abstract Senatssaal
 %TODO Farbe ändern
 \newcommand{\abstractSenatssaal}[4]%
 {%
-	\setabstract{#1}{#2}{#3}{#4}{orange}{Senatssaal}
+	\setabstract{#1}{#2}{#3}{#4}{dezentrot}{Senatssaal}
 }
 
 % viel zu lang
