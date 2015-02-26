@@ -2,6 +2,7 @@
 version=last,toc=bib,toc=graduated,toc=index,toc=listof,9pt,openany]{scrbook}
 %\pdfminorversion=4
 \usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
 \usepackage{dejavu}
 
 \usepackage{ifmtarg}
@@ -96,19 +97,23 @@ headsep=3mm, footskip=12mm
 }
 \cropmarkswallpaper
 
-%\begin{titlepage}
-%\ClearWallPaper
-%\includepdf{U1-titel}
-%\cropmarkswallpaper
-%\end{titlepage}
+\begin{titlepage}
+\ClearWallPaper
+\includepdf{deckseite-vektor-mit-schnittmarken}
+\cropmarkswallpaper
+\end{titlepage}
 
 \input{inhalt}
+\input{willkommen}
 \input{tabelle-mittwoch}
 \input{mittwoch}
 \input{tabelle-donnerstag}
 \input{donnerstag}
+\input{tabelle-freitag}
 \input{freitag}
 \input{impressum}
+\input{karte}
+\input{rueckseite}
 
 
 \end{document}
