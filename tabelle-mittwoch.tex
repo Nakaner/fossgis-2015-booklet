@@ -7,6 +7,12 @@
 }%
 % Titel -- Redner
 
+
+\newcommand{\workshop}[3]%
+{%
+	\workshopbox{#1}{#2}{#3}
+}%
+
 \newcommand{\otherevent}[1]%
 {%
 	& \textbf{#1}
@@ -21,6 +27,7 @@
 }%
 
 \newcommand{\coffeespace}{\vspace{0.4em}}
+\newcommand{\workshopspace}{\vspace{0.5em}\\}
 
 % Farben definieren
 \definecolor{commongray}{gray}{.9}
@@ -29,9 +36,45 @@
 
 
 \newpage
-\begin{landscape}
+\section*{Workshops am Mittwoch}\label{mittwoch-workshops}
+	\newsmalltimeslot{10:30 bis 12:00}
+	\workshop{52$^\circ§$ North WPS-Workshop}{Benjamin Pross}{1}\workshopspace
+	\noindent\workshop{OSM-Daten in QGIS}{Claas Leiner}{2}\workshopspace
+	\noindent\workshop{Mapping mit d3}{Mila Frerichs}{3}\workshopspace
+	\newsmalltimeslot{15:30 bis 17:00}
+	\workshop{Einführung in das Sensor Web}{Simon Jirka}{1}\workshopspace
+	\workshop{PostGIS für Einsteiger}{Astrid Emde, Harald Schwenk}{2}\workshopspace
+	\workshop{OSM-Daten pflegen und finden mit der Overpass API}{Roland Olbricht}{3}\vfill\newpage
+	
+\section*{Workshops am Donnerstag}\label{donnerstag-workshops}
+	\newsmalltimeslot{09:00 bis 10:30}
+	\workshop{Metadaten-Be\-reit\-stellung in INSPIRE-konformen~GDI}{Axel Schaefer}{1}\workshopspace
+	\workshop{PostGIS für Einsteiger}{Astrid Emde, Harald Schwenk}{2}\workshopspace
+	\workshop{Einführung in die Geodaten-\newline verarbeitung mit Python}{Christian Strobl}{3}\workshopspace
+	\newsmalltimeslot{11:15 bis 12:45}
+	\workshop{Mapbender3-Workshop}{Astrid Emde, Toni Pignataro}{1}\workshopspace
+	\workshop{QGIS-Workshop}{Otto Dassau}{2}\workshopspace
+	\workshop{Datenmodel\-lierung mit Post\-greSQL/ PostGIS für QGIS}{Bernhard Ströbl}{3}\newpage
+	
+\section*{Workshops am Donnerstag}
+	\newsmalltimeslot{14:00 bis 15:30}
+	\workshop{MapServer Pro-Tipps}{Jörg Thomsen, Toni Pignataro}{1}\workshopspace
+	\workshop{Projektions\-ma\-na\-gement mit QGIS}{Claas Leiner}{2}\workshopspace
+	\workshop{Einführungswork\-shop OpenLayers 3}{Marc Jansen}{3}\workshopspace
+	\newsmalltimeslot{16:00 bis 17:30}
+	\workshop{pgRouting-Workshop}{Daniel Kastl}{1}\workshopspace
+	\workshop{QGIS-Server}{Andreas Neumann, Bernhard Ströbl}{2}\workshopspace
+	\workshop{Analyse räumlicher Daten mit GRASS GIS~7}{Markus Neteler, Otto Dassau}{3}\newpage
+
+\section*{Workshops am Freitag}\label{freitag-workshops}
+	\newsmalltimeslot{09:00 bis 10:30}
+	\workshop{Einführung in GeoKettle}{Jens Schaefermeyer}{1}\workshopspace
+	\workshop{GeoServer in action}{Daniel Koch, Nils Bühner}{2}\workshopspace
+	\workshop{Entwicklung von QGIS-Plugins auf der Basis von PyQt und PyQGIS}{Horst Düster}{3}\workshopspace
+
+\begin{landscape}	
 \ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}
-\section*{Mittwoch}\label{mittwoch}
+\section*{Vorträge am Mittwoch}\label{mittwoch}
 
 \begin{center}
 	\begin{longtabu}{lZ{4cm}Z{4cm}}

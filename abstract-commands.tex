@@ -157,6 +157,30 @@
 	\setabstract{#1}{#2}{#3}{#4}{dezentrot}{Senatssaal}
 }
 
+% Workshop STUDLAB
+\newcommand{\workshopbox}[3]%
+{%
+	% 1. Titel
+	% 2. Referent
+	% 3. STUDLAB-Nummer3
+	\setlength\tabcolsep{0pt}
+	\noindent\fcolorbox{white}{dezentrot}{\parbox{\titleboxwidth}{%
+			\noindent
+			\begin{tabu}{X[5L]r}
+				\emph{#2} % Sprecher
+				&
+				\talktime
+				\tabularnewline
+				{\noindent\large \bfseries #1}% % Titel
+				&
+				STUDLAB\,#3
+				\tabularnewline
+			\end{tabu}
+		}
+	}
+	\setlength\tabcolsep{6pt} % Spaltenpadding wieder auf Default setzen
+}
+
 % viel zu lang
 \newcommand{\zulang}{Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. }
 
