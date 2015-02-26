@@ -1,6 +1,10 @@
 \renewcommand{\konferenztag}{\freitag}
 \newtimeslot{8:45}
 
+\abstractEins{Thomas Jakubicka}{Indoor Routing in Gebäuden des öffentlichen Verkehrs auf Basis von OpenStreetMap Daten}{}{%
+	In unserem Vortrag möchten wir unser Konzept der Indoor-Navigation vorstellen und Erfahrungen und "Best Practices" 
+	präsentieren die wir bei der Indoor Erfassung von Gebäuden des öffentlichen Verkehrs gemacht haben. }
+
 \abstractZwei{Tobias Preuß}{Projekt Umweltzone}{zwischen Open Data und OpenStreetMap}{%
 	In diesem Vortrag wird das Projekt "Umweltzone" vorgestellt. Dabei handelt es sich 
 	um eine kostenlose Open-Source-Anwendung für Android-Geräte, mit der sich Benutzer 
@@ -16,15 +20,20 @@
 	im Bundesamt für Kartographie und Geodäsie (BKG) wurde als Schnittstelle zwischen der fachlichen und der 
 	technischen Umsetzung geschaffen. Der Vortrag bietet einen Einblick in die tägliche Arbeit der Betriebsstelle. 
 	Die Ziele sowie die Hürden im täglichen Betrieb werden vorgestellt.}
-
-\abstractEins{Thomas Jakubicka}{Indoor Routing in Gebäuden des öffentlichen Verkehrs auf Basis von OpenStreetMap Daten}{}{%
-	In unserem Vortrag möchten wir unser Konzept der Indoor-Navigation vorstellen und Erfahrungen und "Best Practices" 
-	präsentieren die wir bei der Indoor Erfassung von Gebäuden des öffentlichen Verkehrs gemacht haben. }
 \input{sponsorentexte/205-metaspatial}
 %
 % 9:15
 \newtimeslot{9:15}
-%
+
+\abstractEins{Arndt Brenschede}{Neues zu BRouter}{Mehr als nur Outdoor-Navigation}{%
+	Dieser Vortrag stellt einige der Neuerungen aus dem letzten Jahr beim Projekt BRouter vor, 
+	die selbst die regelmässigen Nutzer noch kaum kennen.
+	Beispiele sind steigungsabhängige Weg-Präferenzen, schnellere Neuberechnungen und die Integration der 30m-SRTM Höhendaten.
+	
+	Die wichtigste Neuerung aber ist ein neues, flexibleres internes Datenmodell. 
+	Dadurch werden sowohl Spezialanwendungen im Wegenetz möglich, etwa im Hinblick auf Barrierefreiheit, 
+	Einsatzfahrzeuge oder Schwerlastverkehr, aber auch Anwendungen in ganz anderen Netzen wie dem Schienen, Fluss- oder Stromnetz.}
+
 % zusätzliches vspace wegen mehrzeiliger Titel nötig
 \abstractZwei{Marc Beiling}{Verkehrsmittelbezogene Erreichbarkeitsvisualisierung der Ruhr-Universität Bochum\vspace{0.3em}}{%
 	Eine beispielhafte Mappinganwendung im Mobilitätskontext}{%
@@ -45,18 +54,12 @@
 	Der Nutzen wird am Beispiel der erfolgreichen digitalen Erschließung des GRASS GIS Videos des U.S. 
 	Army Corps of Engineers Research Laboratory (CERL) aus dem Jahr 1987 demonstriert.}
 
-\abstractEins{Arndt Brenschede}{Neues zu BRouter}{Mehr als nur Outdoor-Navigation}{%
-	Dieser Vortrag stellt einige der Neuerungen aus dem letzten Jahr beim Projekt BRouter vor, 
-	die selbst die regelmässigen Nutzer noch kaum kennen.
-	Beispiele sind steigungsabhängige Weg-Präferenzen, schnellere Neuberechnungen und die Integration der 30m-SRTM Höhendaten.
-	
-	Die wichtigste Neuerung aber ist ein neues, flexibleres internes Datenmodell. 
-	Dadurch werden sowohl Spezialanwendungen im Wegenetz möglich, etwa im Hinblick auf Barrierefreiheit, 
-	Einsatzfahrzeuge oder Schwerlastverkehr, aber auch Anwendungen in ganz anderen Netzen wie dem Schienen, Fluss- oder Stromnetz.}
 %
 % 9:45
 \newtimeslot{9:45}
 %
+\abstractEins{Christoph Hormann (Moderation)}{OSM Lightning Talks II}{}{}\vspace{-2em}
+
 \abstractZwei{Friedrich Müller}{Linked Data basierter Explorer}{%
 	Ein Assistenzsystem zur Erforschung von Umweltdaten für krebsrelevante Ursache-Wirkungs-Beziehungen im raum-zeitlichen Kontext}{%
 	Aktuell ist eine Vielzahl krebsbezogener Informationen als Open-Data verfügbar. Allerdings sind diese Datensätze oft 
@@ -74,27 +77,10 @@
 	OpenSource machen ist einfach. Ein bisschen Code geschrieben, einen schicken Lizenz-Header oben drüber gepastet 
 	und ab damit auf Git oder eine andere hippe Plattform. Aber damit ist es dann meistens doch nicht getan. 
 	Der Vortrag beschreibt warum.}
-
-\abstractEins{Christoph Hormann (Moderation)}{OSM Lightning Talks II}{}{}
 \input{sponsorentexte/203-csgis}
 %
 % 11:00
 \newtimeslot{11:00}
-\abstractZwei{Daniel Kastl}{Location-based Task Management}{Standortbezogene Aufgabenverwaltung für mobile Arbeitsplätze}{%
-	FOSS4G Software kann bei vielerlei Aufgaben mit Raumbezug helfen, Arbeitsabläufe zu verbessern und zu optimieren, und 
-	die Mitarbeiter bei Ihrer täglichen Arbeit zu entlasten. Dieser Vortrag stellt ein Konzept vor für "Location-based Task Management".
-	
-	Mit der Optimierung von Arbeitsabläufen und Tourenplanung im Hinterkopf, und auf Grundlage verfügbarer Open-Source-Software 
-	und offenen Standards haben wir begonnen, eine Task-Management-Software zu entwickeln. In dieser Präsentation 
-	werden Sie Details zu unserem Konzept zu erfahren, und wie dies dazu beitragen kann, Dienstleistungen vor Ort 
-	zu erleichtern, die Servicequalität zu verbessern und die Effizienz zu steigern.}
-
-\abstractZehn{Felix Kunde}{3D GIS Stack aus OpenSource Komponenten}{}{%
-	In den letzten Jahren hat die dritte Dimension auch Einzug in den gängigen FOSSGIS Lösungen (PostGIS, QGIS, OpenLayers etc.) 
-	gehalten, so dass mittlerweile ein kompletter 3D-GIS-Stack aus OpenSource Lösungen realisiert werden kann. 
-	Das wichtigste Ziel der hier vorgestellten Projekte ist die Interaktion mit 3D-Webkarten. Der Anwender soll 
-	in der Lage sein, mit den 3D-Modellen über das Web arbeiten zu können und sie nicht nur zu betrachten.}
-
 % Variante 1 ist auch gut
 %\abstractEins{Roland Olbricht}{Schatzsuche in OpenStreetMap}{}{%
 %	Mit der Overpass API lassen sich auch ungewöhnliche Daten in OpenStreetMap finden -- und bewundern, 
@@ -112,35 +98,49 @@
 	
 	Neben einer Präsentation der Ergebnisse werden dabei auch ausführlich die verwendeten Overpass-API-Abfragen vorgestellt, 
 	sodass jeder die Abfragen leicht für seine Stadt wiederholen oder inhaltlich auf seine Bedürfnisse anpassen kann.}
+\abstractZwei{Daniel Kastl}{Location-based Task Management}{Standortbezogene Aufgabenverwaltung für mobile Arbeitsplätze}{%
+	FOSS4G Software kann bei vielerlei Aufgaben mit Raumbezug helfen, Arbeitsabläufe zu verbessern und zu optimieren, und 
+	die Mitarbeiter bei Ihrer täglichen Arbeit zu entlasten. Dieser Vortrag stellt ein Konzept vor für "Location-based Task Management".
+	
+	Mit der Optimierung von Arbeitsabläufen und Tourenplanung im Hinterkopf, und auf Grundlage verfügbarer Open-Source-Software 
+	und offenen Standards haben wir begonnen, eine Task-Management-Software zu entwickeln. In dieser Präsentation 
+	werden Sie Details zu unserem Konzept zu erfahren, und wie dies dazu beitragen kann, Dienstleistungen vor Ort 
+	zu erleichtern, die Servicequalität zu verbessern und die Effizienz zu steigern.}
+
+\abstractZehn{Felix Kunde}{3D GIS Stack aus OpenSource Komponenten}{}{%
+	In den letzten Jahren hat die dritte Dimension auch Einzug in den gängigen FOSSGIS Lösungen (PostGIS, QGIS, OpenLayers etc.) 
+	gehalten, so dass mittlerweile ein kompletter 3D-GIS-Stack aus OpenSource Lösungen realisiert werden kann. 
+	Das wichtigste Ziel der hier vorgestellten Projekte ist die Interaktion mit 3D-Webkarten. Der Anwender soll 
+	in der Lage sein, mit den 3D-Modellen über das Web arbeiten zu können und sie nicht nur zu betrachten.}
+
 %
 % 11:30
 \newtimeslot{11:30}
+\abstractEins{Robert Buchholz}{FlatMatch -- Online-Wohnungssuche mit OSM-Daten}{Können wir tausende deutsche Vermieter zu OSM-Mitwirkenden machen?}{%
+	FlatMatch ist eine Web-Anwendung, um Mietwohnungen direkt im Webbrowser virtuell zu besichtigen und so eine geeignete neue Wohnung zu finden. 
+	Hierzu wird die Wohnung \emph{und}, basierend auf OSM-3D-Gebäuden und TileMaps die Aussicht aus der Wohnung interaktiv dreidimensional dargestellt.
+	
+	Dies vereinfacht für Mieter die Wohnungssuche und erlaubt Vermietern, den Personalaufwand für Besichtigungen zu reduzieren, 
+	und ihre Wohnungen auch auf Basis deren Umfelds zu vermarkten.
+	Die Mitarbeit kommerzieller Nutzer an OSM hängt jedoch allein davon ab, ob sie dadurch einen 
+	wirtschaftlichen Mehrwert erhalten. FlatMatch könnte zehntausende kleine und mittlere Unternehmen in Deutschland 
+	diesen Mehrwert bieten.}
+
 % zusätzliches vspace wegen langem Titel
-\abstractZwei{Tobias Sauerwein}{MapFish Print V3 -- Printing maps like a boss\vspace{0.3em}}{The next generation of printed maps}{%
+\abstractZwei{Tobias Sauerwein}{MapFish Print V3 -- Printing maps like a boss\vspace{0.3em}}{}{%
 	Das Projekt MapFish Print besteht aus einer Bibliothek und einer Web-Anwendung zum Druck von Reports mit Karten, 
 	wobei eine Vielfalt von Quellen unterstützt wird, z.\,B. WMS, WMTS, OpenStreetMap-Kacheln, WFS oder GeoJSON.
 	Dieser Vortrag stellt die neue Version von MapFish Print vor und spricht Themen an wie die neuen Features und 
 	deren Nutzung, die Erstellung von Templates mit dem Report-Designer von JasperReports, Upgrade von der 
 	vorherigen Version, Skalierbarkeit und Erweiterung durch eigene Module.}
 
-\abstractZehn{Elisabeth Leu}{Cesium -- der 3D-Globus im Web}{Open Source Technologie in drei Dimensionen}{%
+\abstractZehn{Elisabeth Leu}{Cesium -- der 3D-Globus im Web}{}{%
 	Cesium ist eine JavaScript-Bibliothek, mit der 3D-Globen für das Web erstellt werden können. 
 	Cesium nutzt WebGL und unterstützt ausserdem OGC-Standards wie WMS oder WMTS.
 	
 	Im Vortrag werden folgende Fragen beantwortet: Was kann Cesium? Performante mehrdimensionale Visualisierung im Web -- was steckt dahinter? 
 	Wo wird überall Cesium eingesetzt? Ausserdem wird die Kombination von Openlayers3 mit Cesium vorgestellt 
 	und ein Ausblick über die künftige Entwicklung gegeben.}
-
-\abstractEins{Robert Buchholz}{FlatMatch -- Online-Wohnungssuche mit OSM-Daten}{Können wir tausende deutsche Vermieter zu OSM-Mitwirkenden machen?}{%
-	FlatMatch ist eine Web-Anwendung, um Mietwohnungen direkt im Webbrowser virtuell zu besichtigen und so eine geeignete neue Wohnung zu finden. 
-	Hierzu wird nicht nur die Wohnung interaktiv dreidimensional dargestellt. Auch die Aussicht aus der Wohnung 
-	wird -- auf Basis von OSM-3D-Gebäuden und TileMaps -- dargestellt, um einen besseren Einblick in das Wohnumfeld zu geben. 
-	
-	Dies vereinfacht für Mieter die Wohnungssuche und erlaubt Vermietern, den Personalaufwand für Besichtigungen zu reduzieren, 
-	und ihre Wohnungen auch auf Basis deren Umfelds zu vermarkten.
-	Die Mitarbeit kommerzieller Nutzer an OSM hängt jedoch allein davon ab, ob sie dadurch einen 
-	wirtschaftlichen Mehrwert erhalten. FlatMatch könnte zehntausende kleine und mittlere Unternehmen in Deutschland 
-	diesen Mehrwert (und eine Motivation, ihre Umgebung zu mappen) bieten.}
 %
 % 12:30
 \newtimeslot{12:30}

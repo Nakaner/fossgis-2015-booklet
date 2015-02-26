@@ -4,6 +4,18 @@
 
 % 9:00
 %
+\abstractEins{Falk Zscheile}{OSM und die Kunst die Welt zu ordnen}{Sprachliche und logische Aspekte 
+des Taggingschemas in OpenStreetMap}{%
+Anders als bei der klassischen Geodatenerfassung gibt es bei OSM keine hierarchisches gegliedertes System zur Kennzeichnung der erfassten Daten. 
+Über die Frage des "richtigen" Taggings, wird sehr häufig gestritten. Oft verlaufen die Diskussionen ohne Ergebnis im Sande.
+
+Dabei zeigt sich, dass häufig schon bei der Diskussion eines Problems aneinander vorbeigeredet wird, da der Kontext 
+des Diskussionspartners nicht berücksichtigt wird. Dies zeigt sich häufig auch in einer mangelnden Auseinandersetzung mit 
+Grundprinzipien der Logik. Zudem bleibt unberücksichtigt, dass sich die Tagfindung aufgrund der "on the ground rule" an 
+der Alltagsbedeutung von Begriffen orientiert, in den anschließenden Diskussionen aber eine feste Bedeutung im Sinne 
+wissenschaftlicher Definitionen unterstellt wird.
+}
+
 \abstractZwei{Otto Dassau und Sören Gebbert}{GRASS-Funktionalität in QGIS nutzen}{}{%
 	Seit 2005 ist GRASS GIS in QGIS über das GRASS Plugin integriert und stellt hunderte 
 Analysemethoden über QGIS bereit -- ergänzend mittlerweile auch über das Processing und WPS Plugin. 
@@ -22,23 +34,22 @@ bietet die Integration von GRASS Funktionalität über das WPS Plugin.
 	werden aufgezeigt und auch wo und warum OpenLayers 3 anders ist. Aktuelle Entwicklungen, wie etwa das OL3-Cesium 
 	Project, welches die dritte Dimension für OpenLayers zuänglich macht, werden präsentiert und ein Blick in die 
 	zukünftige Entwicklung gewagt. }
-	
-\abstractEins{Falk Zscheile}{OSM und die Kunst die Welt zu ordnen}{Sprachliche und logische Aspekte 
-des Taggingschemas in OpenStreetMap}{%
-	Anders als bei der klassischen Geodatenerfassung gibt es bei OSM keine hierarchisches gegliedertes System zur Kennzeichnung der erfassten Daten. 
-	Über die Frage des "richtigen" Taggings, wird sehr häufig gestritten. Oft verlaufen die Diskussionen ohne Ergebnis im Sande.
-	
-	Dabei zeigt sich, dass häufig schon bei der Diskussion eines Problems aneinander vorbeigeredet wird, da der Kontext 
-	des Diskussionspartners nicht berücksichtigt wird. Dies zeigt sich häufig auch in einer mangelnden Auseinandersetzung mit 
-	Grundprinzipien der Logik. Zudem bleibt unberücksichtigt, dass sich die Tagfindung aufgrund der "on the ground rule" an 
-	der Alltagsbedeutung von Begriffen orientiert, in den anschließenden Diskussionen aber eine feste Bedeutung im Sinne 
-	wissenschaftlicher Definitionen unterstellt wird.
-	}
 %
 
 \newtimeslot{9:30}
 % 9:30
 %
+% Alles weitere, was im lagen Abstract steht und hier nicht auskommentiert ist, ist relativ logisch. 
+% Außerdem ist der Rest des Absatzes auch mit inhaltlichen Fehlern gespickt, 
+% die man niemanden lesen lassen möchte.
+% Originaler Titel im Pentabarf "OSM auf Räder", nicht "OSM auf Rädern"!
+%\abstractEins{Nicole Beringer}{OSM auf Räder}{}{Sind die OSM Karten soweit, um den Wettbewerb mit kommerziellen Karten im Autonavigationsbereich aufzunehmen?}
+\abstractEins{Nicole Beringer}{OSM auf Räder}{}{%
+	Sind die OSM-Karten soweit, um den Wettbewerb mit kommerziellen Karten im Autonavigationsbereich aufzunehmen?	
+	Die Software-Unternehmen aus dem automotiven Bereich verfolgen die OSM-Entwicklung mit großer 
+	Aufmerksamkeit und stehen auf der Spitze der Implementierung dieser neuen Technologie.	
+}
+
 \abstractZwei{Sören Gebbert}{Zeitreihenanalyse mit GRASS GIS}{GRASS das temporale Open Source GIS}{%
 	Durch die Integration der Zeit als neue Dimension in GRASS GIS stehen nun über 45 Werkzeuge 
 	zur Zeitreihenalayse bereit. 
@@ -54,16 +65,6 @@ des Taggingschemas in OpenStreetMap}{%
 	Projektes in dem eine Kartenanwendung umgesetzt wurde. Besonderes Augenmerk lag bei der Entwicklung auf der 
 	schnellen und leichten anpassbar- und Wiederverwendbarkeit der Komponenten.}
 
-% Alles weitere, was im lagen Abstract steht und hier nicht auskommentiert ist, ist relativ logisch. 
-% Außerdem ist der Rest des Absatzes auch mit inhaltlichen Fehlern gespickt, 
-% die man niemanden lesen lassen möchte.
-% Originaler Titel im Pentabarf "OSM auf Räder", nicht "OSM auf Rädern"!
-%\abstractEins{Nicole Beringer}{OSM auf Räder}{}{Sind die OSM Karten soweit, um den Wettbewerb mit kommerziellen Karten im Autonavigationsbereich aufzunehmen?}
-\abstractEins{Nicole Beringer}{OSM auf Räder}{}{%
-	Sind die OSM-Karten soweit, um den Wettbewerb mit kommerziellen Karten im Autonavigationsbereich aufzunehmen?	
-	Die Software-Unternehmen aus dem automotiven Bereich verfolgen die OSM-Entwicklung mit großer 
-	Aufmerksamkeit und stehen auf der Spitze der Implementierung dieser neuen Technologie.	
-	}
 
 \input{sponsorentexte/107-elektrobit}
 %
@@ -71,16 +72,6 @@ des Taggingschemas in OpenStreetMap}{%
 \newtimeslot{10:00}
 % 10:00
 %
-\abstractZwei{Stefan Ziegler}{Kreisbogen in QGIS}{}{Neben den gängigen Vektorelementen (Punkt, Linie, Polygon) 
-	unterstützt QGIS neu Kreisbogengeometrien. Es ist jetzt möglich solche Geometrietypen 
-	(ST\_CircularString, ST\_CompoundCurve, ST\_CurvePolygon etc.) aus einer Postgis-Datenbank zu lesen, anzuzeigen, zu editieren und wieder zu speichern.}
-
-\abstractZehn{Christian Mayer und Marc Jansen}{GeoExt}{Ein ExtJS basiertes Rich-Client-WebGIS-Framework 
-	in Zeiten von AngularJS und Konsorten}{%
-	Der Vortrag stellt die neueste Version von GeoExt vor und zeigt auf, welches Handwerkszeug dem Entwickler 
-	hier bereitsgestellt wird. Unterschiede zwischen ExtJS und anderen Bibliotheken werden benannt, dies kann 
-	als Diskussionsgrundlage für die Wahl einer Bibliothek dienen. Schwerpunkt ist die Betrachtung der zukünftigen 
-	Entwicklung von GeoExt.}
 
 \abstractEins{Robert Klemm}{Automatisierte OSM Aufbereitung und Analyse von LKW-Mautstrecken in Deutschland}{}{%
 	Das beschriebene Tool erstellt mautpflichtigen Strecken anhand von Mautpunkten der Bundesanstalt für Straßenwesen (BASt). 
@@ -92,11 +83,31 @@ des Taggingschemas in OpenStreetMap}{%
 	Routingparametern, wie Fahrzeug-, Achs-, Gewichtsklasse und Betreiber. Es lässt sich beispielsweise die 
 	schnellste und günstigste Strecke, bezogen auf die zu entrichtende Straßenmaut, ermitteln und grafisch 
 	anzeigen.}
+
+\abstractZwei{Stefan Ziegler}{Kreisbogen in QGIS}{}{Neben den gängigen Vektorelementen (Punkt, Linie, Polygon) 
+	unterstützt QGIS neu Kreisbogengeometrien. Es ist jetzt möglich solche Geometrietypen 
+	(ST\_CircularString, ST\_CompoundCurve, ST\_CurvePolygon etc.) aus einer Postgis-Datenbank zu lesen, anzuzeigen, zu editieren und wieder zu speichern.}
+
+\abstractZehn{Christian Mayer und Marc Jansen}{GeoExt}{Ein ExtJS basiertes Rich-Client-WebGIS-Framework 
+	in Zeiten von AngularJS und Konsorten}{%
+	Der Vortrag stellt die neueste Version von GeoExt vor und zeigt auf, welches Handwerkszeug dem Entwickler 
+	hier bereitsgestellt wird. Unterschiede zwischen ExtJS und anderen Bibliotheken werden benannt, dies kann 
+	als Diskussionsgrundlage für die Wahl einer Bibliothek dienen. Schwerpunkt ist die Betrachtung der zukünftigen 
+	Entwicklung von GeoExt.}
 %
 
 \newtimeslot{11:15}
 % 11:15
 %
+\abstractEins{Claas Leiner}{Daten aus OSM extrahieren und in QGIS weiterverarbeiten}{Am Beispiel der Verteilung 
+	von Windanlagen in Deutschland}{%
+	Der Vortrag erläutert die Fragestellung am Beispiel der Verteilung von Windkraftanlagen in Deutschland. A
+	ngefangen vom Import der deutschlandweiten OSM-Daten in eine PostGis-Datenbank, über die Abfrage der 
+	WKA-Standorte bis hin zur Präsentation der Verteilung in einer farbigen Flächendichtekarte, die aus 
+	einer interpolierten Rasteroberfläche erzeugt worden ist, welche die Anzahl der Windanlagen im Umkreis 
+	von 20\,km darstellt. Dabei kamen Abfrage- und Geoverarbeitungswerkzeuge aus QGIS sowie das GRASS-Modul 
+	zur Spline-Interpolation (v.surf.rst) zur Anwendung.}
+
 \abstractZwei{Mila Frerichs}{Geospatial Ruby}{}{%
 	Der Talk gibt einen Überblick darüber, was mit Ruby im Geo Bereich möglich ist. Viele große 
 	erfolgreiche Webprojekte sind mit Ruby und dem dazugehörigen Webframework Rails umgesetzt worden. 
@@ -113,20 +124,18 @@ des Taggingschemas in OpenStreetMap}{%
 	glättet oder den Zugriff auf MapServer-WMS direkt im Mapfile auf bestimmte IP-Adressen beschränken kann?
 	
 	Weitere Themen des Vortrags sind PHP-Fassaden, JOINs mit Datei basierten Datenquellen, ColorRanges, Cluster von Punktobjekten, Geomtransform und IP-Zugriffsbeschränkungen.}
-
-\abstractEins{Claas Leiner}{Daten aus OSM extrahieren und in QGIS weiterverarbeiten}{Am Beispiel der Verteilung 
-	von Windanlagen in Deutschland}{%
-	Der Vortrag erläutert die Fragestellung am Beispiel der Verteilung von Windkraftanlagen in Deutschland. A
-	ngefangen vom Import der deutschlandweiten OSM-Daten in eine PostGis-Datenbank, über die Abfrage der 
-	WKA-Standorte bis hin zur Präsentation der Verteilung in einer farbigen Flächendichtekarte, die aus 
-	einer interpolierten Rasteroberfläche erzeugt worden ist, welche die Anzahl der Windanlagen im Umkreis 
-	von 20\,km darstellt. Dabei kamen Abfrage- und Geoverarbeitungswerkzeuge aus QGIS sowie das GRASS-Modul 
-	zur Spline-Interpolation (v.surf.rst) zur Anwendung.}
 %
 
 \newtimeslot{11:45}
 % 11:45
 %
+\abstractEins{Jochen Topf}{Taginfo und wie es die Welt sah}{}{%
+	Das OpenStreetMap-Projekt organisiert seine Daten über ein offenes Taggingschema. 
+	Jeder kann neue Objekte und Tags erfinden und in der OSM-Datenbank speichern. 
+	Dieser Vortrag stellt den Web-Dienst "taginfo" vor, der Informationen zu Tags aus 
+	verschiedenen Quellen darstellt und Mappern so hilft, die Übersicht zu behalten. 
+	Der Vortrag geht sowohl auf die alltägliche Nutzung als auch auf weniger bekannte Seiten des Dienstes ein.}
+
 \abstractZwei{Alexey Valikov}{Jsonix: OGC Web Services in JSON}{}{%
 	JSON hat wahrscheinlich XML schon längst als "lingua franca" ersetzt. 
 	Es ist viel leichtgewichtiger und einfacher zu verwenden als XML, vor 
@@ -147,18 +156,24 @@ des Taggingschemas in OpenStreetMap}{%
 	Der Vortrag geht auf die kleinen und großen Unterschiede zwischen Mapnik und MapServer ein. Für welche 
 	Einsatzzwecke ist MapServer besser geeignet? Was kann Mapnik besonders gut? Wie können die Renderer in 
 	Anwendungen und Server integriert werden? Gibt es überhaupt nennenswerte Unterschiede?}
-
-\abstractEins{Jochen Topf}{Taginfo und wie es die Welt sah}{}{%
-	Das OpenStreetMap-Projekt organisiert seine Daten über ein offenes Taggingschema. 
-	Jeder kann neue Objekte und Tags erfinden und in der OSM-Datenbank speichern. 
-	Dieser Vortrag stellt den Web-Dienst "taginfo" vor, der Informationen zu Tags aus 
-	verschiedenen Quellen darstellt und Mappern so hilft, die Übersicht zu behalten. 
-	Der Vortrag geht sowohl auf die alltägliche Nutzung als auch auf weniger bekannte Seiten des Dienstes ein.}
 %
 
 \newtimeslot{12:15}
 % 12:15
 %
+\abstractEins{Peter Barth}{Crowd-Sourced Elevation}{DIY DEM}{%	
+	Digitale Höhenmodelle können für eine Vielzahl von Anwendungen im OpenStreetMap-Umfeld verwendet werden. 
+	In Renderstilen werden sie z.\,B. für Schummerungen oder Höhenlinien verwendet. 
+	Aber auch bei Routinganwendungen gibt es verschiedenste Gründe, das Geländemodell mit zu beachten: 
+	Fahrradfahrer, Rollstuhlfahrer aber auch Energiesparen bei Elektromobilität.
+	
+	Mit SRTM steht ein genaues Höhenmodell mit nahezu globaler Abdeckung gemeinfrei zur Verfügung und 
+	erst kürzlich wurde auch die Version mit einer Auflösung von einer Bogensekunde freigegeben. Aber reicht das?
+	
+	Nach einem Überblick über das Thema Höhenmodelle und die verschiedenen Datenquellen wird anhand von Experimenten und 
+	deren Auswertung gezeigt, wie man mit einem handelsüblichen Smartphone selbst ein Höhenmodell erstellen 
+	kann. Eignen sich die Methoden für Crowdsourcing und wie gut ist das Ergebnis verglichen mit SRTM?}
+
 \abstractZwei{Christian Mayer}{Serverseitiges JavaScript und GIS}{Mit Node.js und npm die Welt beherrschen}{Der 
 	Vortrag gibt eine allgemeine Einführung in die Node.js-Welt und zeigt wie mit Node.js geo-relevante Probleme, 
 	wie das Einlesen von GIS-Datenformaten sowie die Verarbeitung von Geodaten möglich wird. Ebenso wird eine 
@@ -172,19 +187,6 @@ des Taggingschemas in OpenStreetMap}{%
 	Möglichkeiten beim Einsatz dieser Software.
 	
 	Themen des Vortrags sind das Kompilieren, die Verwendung der REST-Schnittstelle, Extensions, Performance-Tuning, GeoWebCache-Einsatz, Troubleshooting und Stolperfallen.}
-
-\abstractEins{Peter Barth}{Crowd-Sourced Elevation}{DIY DEM}{%	
-	Digitale Höhenmodelle können für eine Vielzahl von Anwendungen im OpenStreetMap-Umfeld verwendet werden. 
-	In Renderstilen werden sie z.\,B. für Schummerungen oder Höhenlinien verwendet. 
-	Aber auch bei Routinganwendungen gibt es verschiedenste Gründe, das Geländemodell mit zu beachten: 
-	Fahrradfahrer, Rollstuhlfahrer aber auch Energiesparen bei Elektromobilität.
-	
-	Mit SRTM steht ein genaues Höhenmodell mit nahezu globaler Abdeckung gemeinfrei zur Verfügung und 
-	erst kürzlich wurde auch die Version mit einer Auflösung von einer Bogensekunde freigegeben. Aber reicht das?
-	
-	Nach einem Überblick über das Thema Höhenmodelle und die verschiedenen Datenquellen wird anhand von Experimenten und 
-	deren Auswertung gezeigt, wie man mit einem handelsüblichen Smartphone selbst ein Höhenmodell erstellen 
-	kann. Eignen sich die Methoden für Crowdsourcing und wie gut ist das Ergebnis verglichen mit SRTM?}
 %
 
 \newtimeslot{13:45}
@@ -202,6 +204,12 @@ des Taggingschemas in OpenStreetMap}{%
 \newtimeslot{14:30}
 % 14:30
 % Der Untertitel ist ewig lang und der Inhalt steht auch so im Abstract.
+\abstractEins{Sascha L. Teichmann}{MTSatellite}{Echtzeit Webmapping für Minetest-Welten oder Spiel-Spass mit GIS}{%
+	Der Vortrag stellt die Freie Software MTSatellite vor, ein Live-Webmapping System für das Open World/Sandbox-Spiel Minetest 
+	(eine Open-Source-Alternative zu Minecraft). 
+	Der Vortrag führt das System vor und gibt eine teils vertiefende Übersicht über die eingesetzen Technologien sowohl aus GIS- 
+	als auch aus Sicht eines passionierten Minetest-Spielers.}
+
 \abstractZwei{Jakob Tworek}{Erfassung von Landnutzungsveränderungen mit FOSS Image Processing Tools}%
 {%Change Detection mit QGIS - Landnutzungs- und -bedeckungsveränderungen erfassen
 	}{%
@@ -217,28 +225,12 @@ des Taggingschemas in OpenStreetMap}{%
 	Zukunft eine Reihe neuer Algorithmen zur Tourenplanung zu erwarten. Dieser Vortrag stellt 
 	die verschiedenen Algorithmen vor und geht darauf ein, wie die Struktur der Netzdaten die Leistung des Systems beeinflussen kann.}
 
-\abstractEins{Sascha L. Teichmann}{MTSatellite}{Echtzeit Webmapping für Minetest-Welten oder Spiel-Spass mit GIS}{%
-	Der Vortrag stellt die Freie Software MTSatellite vor, ein Live-Webmapping System für das Open World/Sandbox-Spiel Minetest 
-	(eine Open-Source-Alternative zu Minecraft). 
-	Der Vortrag führt das System vor und gibt eine teils vertiefende Übersicht über die eingesetzen Technologien sowohl aus GIS- 
-	als auch aus Sicht eines passionierten Minetest-Spielers.}
 % Platz für Silber-Sponsor Camptocamp
 \input{sponsorentexte/102-camptocamp}
 
 \newtimeslot{15:00}
 % 15:00
 %
-\abstractZwei{Jens Schaefermeyer}{Automatisiertes Geodatenmanagement mit  GeoKettle}{}{%
-	Dieser Vortrag stellt verschiedene Einsatzmöglichkeiten der freien ETL-Software GeoKettle vor. 
-	GeoKettle ist die Open Source-Alternative zur verbreiteten Software "FME" und kann nicht nur Geodatenformate konvertieren, 
-	sondern beispielsweise auch Objekte verteilen und zusammenfassen, redundante Daten 
-	finden oder Prozesse in einer grafischen Oberfläche modellieren.}
-
-\abstractZehn{Felix Kunde}{PostGIS Memento}{Versionierung von PostGIS-Datenbanken}{Memento. Gibt es nicht 
-	einen Film, der so heißt? Jemand, der kein Gedächtnis hat und sich alle Ereignisse aufschreibt? 
-	Zumindest geht es bei pgMemento darum. pgMemento zeichnet alle Veränderungen in einer 
-	PostgreSQL Datenbank auf und erlaubt die Wiederherstellung beliebiger frühere Zeitstände.}
-
 \abstractEins{Tobias Knerr}{Straßenrennen in der Innenstadt}{SuperTuxKart-Strecken bauen mit OSM2World}{%
 	Der Gründer des Open-Source-Projekts OSM2World erzählt von einer weiteren spannenden Anwendungsmöglichkeit des 3D-Renderers -- die 
 	Erstellung von Rennstrecken für das freie Computerspiel SuperTuxKart.
@@ -251,11 +243,30 @@ des Taggingschemas in OpenStreetMap}{%
 	Verbesserungen vorgenommen und der gewünschte Streckenverlauf eingezeichnet. Ein Blender-Plugin 
 	erlaubt schließlich den Export einer fertigen Strecke für SuperTuxKart.	
 }
+
+\abstractZwei{Jens Schaefermeyer}{Automatisiertes Geodatenmanagement mit  GeoKettle}{}{%
+	Dieser Vortrag stellt verschiedene Einsatzmöglichkeiten der freien ETL-Software GeoKettle vor. 
+	GeoKettle ist die Open Source-Alternative zur verbreiteten Software "FME" und kann nicht nur Geodatenformate konvertieren, 
+	sondern beispielsweise auch Objekte verteilen und zusammenfassen, redundante Daten 
+	finden oder Prozesse in einer grafischen Oberfläche modellieren.}
+
+\abstractZehn{Felix Kunde}{PostGIS Memento}{Versionierung von PostGIS-Datenbanken}{Memento. Gibt es nicht 
+	einen Film, der so heißt? Jemand, der kein Gedächtnis hat und sich alle Ereignisse aufschreibt? 
+	Zumindest geht es bei pgMemento darum. pgMemento zeichnet alle Veränderungen in einer 
+	PostgreSQL Datenbank auf und erlaubt die Wiederherstellung beliebiger frühere Zeitstände.}
 %
 
 \newtimeslot{16:00}
 % 16:00
 %
+\abstractEins{Vladimir Elistratov}{Prokitektura -- prozedurale realistische 3D Gebäude und Städte}{}{%
+	Prokitektura is ein prozedurales und iteratives Verfahren für Schaffung architektonischer 3D Modelle. 
+	
+	Ein Satz kleiner Funktionen auf Python wird verwendet um 3D Gebäude zu generieren.
+	Eine solche Funktion nennt man Regel. Jede nachfolgende Regel verfeinert das Modell 
+	und ergänzt es mit zusätzlichen Details. Zur Zeit ist Prokitektura als ein Add-on für 
+	Open Source 3D Plattform Blender realisiert.}
+
 \abstractZwei{Till Adams}{WPS, GeoServer und SHOGun}{}{Der Vortrag stellt die Erweiterung des SHOgun 
 	Frameworks als WPS-CLient dar. Als WPS Server kommt der GeoServer-WPS zum Einsatz. Der Vortrag 
 	wird zum einen kurz die Mechanismen des WPS erläutern, die Einbindung in das SHOGun Framework an 
@@ -265,19 +276,20 @@ des Taggingschemas in OpenStreetMap}{%
 	Docker schnell und einfach Anwendungs-Container für Ihre GIS-Fachanwendung erstellen. Haben die 
 	GIS-Admins demnächst wieder mehr Zeit für ungleich spannendere Aufgaben als die Installation von Fachanwendungen?}
 
-\abstractEins{Vladimir Elistratov}{Prokitektura -- prozedurale realistische 3D Gebäude und Städte}{}{%
-	Prokitektura is ein prozedurales und iteratives Verfahren für Schaffung architektonischer 3D Modelle. 
-	
-	Ein Satz kleiner Funktionen auf Python wird verwendet um 3D Gebäude zu generieren.
-	Eine solche Funktion nennt man Regel. Jede nachfolgende Regel verfeinert das Modell 
-	und ergänzt es mit zusätzlichen Details. Zur Zeit ist Prokitektura als ein Add-on für 
-	Open Source 3D Plattform Blender realisiert.}
 % Platz für Silbersponsor Omniscale
 \input{sponsorentexte/103-omniscale}
 
 \newtimeslot{16:30}
 % 16:30
 %
+\abstractEins{Hongchao Fan}{Die neue WebGL-basierte Plattform für OSM-3D}{}{%
+	In diesem Vortrag wird die technische Archtektur, das Funktiondesign und die 
+	Implementierung der neue WebGL-basierte Plattform von OSM-3D präsentiert. 
+	Es werden interaktive Visualisierungen der 3D Stadtmodelle und 3D Geländemodelle 
+	demonstriert. Das neue Interface für interaktive Erfassungen von Dach- und 
+	Fassadenstrukturen wird vorgestellt und mit Beispielen demonstriert. 
+	Diskussion von Vorschlägen zur Verbesserungen der neuen Plattform. }
+
 \abstractZwei{Astrid Emde}{Mapbender\,3 für den einfachen Aufbau von WebGIS Anwendungen}{So einfach ist 
 	der Aufbau von WebGIS Anwendungen mit Mapbender3}{Mapbender3 ist eine Software zur einfachen 
 	Erstellung von WebGIS Anwendungen. Der Vortrag geht vor allem auf die neuen Komponenten in 
@@ -299,19 +311,14 @@ des Taggingschemas in OpenStreetMap}{%
 	Jahre alt sind und in einer Mietwohnung mit weniger als 50m$^2$ wohnen. Dieser Vortrag wird eine 
 	kurze Einführung in Couchbase und die Datenmodellerung geben und dann in eine 
 	Live-Demonstration übergehen.}
-
-\abstractEins{Hongchao Fan}{Die neue WebGL-basierte Plattform für OSM-3D}{}{%
-	In diesem Vortrag wird die technische Archtektur, das Funktiondesign und die 
-	Implementierung der neue WebGL-basierte Plattform von OSM-3D präsentiert. 
-	Es werden interaktive Visualisierungen der 3D Stadtmodelle und 3D Geländemodelle 
-	demonstriert. Das neue Interface für interaktive Erfassungen von Dach- und 
-	Fassadenstrukturen wird vorgestellt und mit Beispielen demonstriert. 
-	Diskussion von Vorschlägen zur Verbesserungen der neuen Plattform. }
+% Platz für Bronzesponsor Büro Dassau
 \input{sponsorentexte/209-geoinformatik-buero-dassau}
+
 %
 
 \newtimeslot{17:00}
 % 17:00
+\abstractEins{Christoph Hormann (Moderation)}{OSM Lightning Talks}{}{}\vspace{-2em}
 \abstractZwei{Simon Jirka}{Erfahrungen mit Sensor Web-An\-wendungen für mobile Geräte und Desktop-Anwendungen}{}{%
 	Dieser Vortrag stellt einen freien, auf JavaScript basierenden Sensor Web-Client vor, 
 	der auf allen Arten von Endgeräten von Mobiltelefonen bis hin zu Desktop-PCs einsetzbar ist. 
@@ -322,19 +329,17 @@ des Taggingschemas in OpenStreetMap}{%
 	Es werden die Vor- und Nachteile von Vectortiling und der Vektordaten-Prozessierung im Client allgemein beleuchtet. 
 	Als praktischer Anwendungsfall wird das Prinzip der Vectortiles anhand des Software-Stacks 
 	TileStache, OpenLayers3 und PostGIS auf Basis von OSM-Daten vorgestellt.}
-
-\abstractEins{Christoph Hormann (Moderation)}{OSM Lightning Talks}{}{}
 %
 
 \newsmalltimeslot{17:30}
 % 17:30
 \vspace{-2em}
+\abstractEins{Olaf Knopp}{PostNAS Anwendertreffen}{}{%
+	PostNAS ist ein Projekt zum Import von ALKIS Daten über OGR. Es werden aktuelle Entwicklungen des Projekt vor\-gestellt.}
 \abstractZwei{\label{bof-donnerstag}Till Adams}{SHOGun BoF/Anwender- und Entwicklertreffen}{}{Es wird der aktuelle 
 	Entwicklungsstand von SHOgun, neue Ideen und auch neue Entwicklungen, die seit der FOSSGIS 2014 dazu gekommen sind, vor\-gestellt.}
 \abstractZehn{Danilo Bretschneider}{deegree Anwendertreffen}{}{deegree ist ein Open-Source Java-Framework für 
 	die Verwaltung und Darstellung OGC-konformer Geoinformationssysteme.}
-\abstractEins{Olaf Knopp}{PostNAS Anwendertreffen}{}{%
-	PostNAS ist ein Projekt zum Import von ALKIS Daten über OGR. Es werden aktuelle Entwicklungen des Projekt vor\-gestellt.}
 %
 
 \newsmalltimeslot{19:30}
