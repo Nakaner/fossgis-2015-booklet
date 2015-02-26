@@ -2,7 +2,7 @@
 version=last,toc=bib,toc=graduated,toc=index,toc=listof,9pt,openany]{scrbook}
 %\pdfminorversion=4
 \usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
+\usepackage[ngerman, english]{babel}
 \usepackage{dejavu}
 
 \usepackage{ifmtarg}
@@ -34,7 +34,8 @@ headsep=3mm, footskip=12mm
 
 %Dateipfade, wo die Bilder liegen
 \graphicspath{{images-print/}{icons/}{extra-pages/}{wallpaper/}}
-
+\usepackage{floatflt} % umflossene Logos
+\usepackage{wrapfig}  % umflossene Logos von Sponsoren mit Multiabsatztexten
 
 \usepackage{tabu}
 \usepackage{tabularx}
@@ -111,6 +112,7 @@ headsep=3mm, footskip=12mm
 \input{donnerstag}
 \input{tabelle-freitag}
 \input{freitag}
+\input{sponsoren}
 \input{impressum}
 \input{karte}
 \input{rueckseite}

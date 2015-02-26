@@ -30,6 +30,10 @@
 % Titeltabelle setzen
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
 
+%% Längen für Sponsorenbox und Titelboxen
+\newlength{\titleboxwidth}
+\setlength{\titleboxwidth}{\textwidth}
+\advance\titleboxwidth by -6pt
 \newcommand{\setabstract}[6]{
 	% 1. Sprecher
 	% 2. Titel
@@ -40,7 +44,7 @@
 	\thispagestyle{scrheadings} 
 	\setlength\tabcolsep{0pt}
 	% \setlength{\fboxsep}{0pt}
-	\noindent\colorbox{#5}{%
+	\noindent\fcolorbox{white}{#5}{\parbox{\titleboxwidth}{%
 		\noindent\begin{tabu}{X[5L]r}
 			\isspeakerempty{#1}{#2}{#6}
 %			\emph{#1} % Sprecher
@@ -55,7 +59,7 @@
 %			\multicolumn{2}{p{\linewidth}}{\issubtitleempty{#3}}
 %			\tabularnewline
 		\end{tabu}%
-	}
+	}}
 	%
 	\isabstractempty{#4}%
 	\setpagebackground%
@@ -155,3 +159,26 @@
 
 % viel zu lang
 \newcommand{\zulang}{Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. Dieser Text ist viel zu lang. }
+
+%% Längen für Sponsorenbox
+\newlength{\fboxwidth}
+\setlength{\fboxwidth}{\textwidth}
+\advance\fboxwidth by -9pt
+%% Sponsorenbox
+%% 1. Logo
+%% 2. Logobreite
+%% 3. negativer vspace nach Logo
+%% 4. Text
+\newcommand{\sponsorenbox}[4]{%
+	\setlength{\fboxsep}{4.5pt}
+	\noindent\fcolorbox{gray}{white}{\parbox{\fboxwidth}{
+			\begin{floatingfigure}[r]{#2}
+				\centering
+				\includegraphics[width=#2]{#1}
+				\vspace{#3}
+			\end{floatingfigure}		
+			
+			\noindent #4
+		}}
+		\setlength{\fboxsep}{3pt}
+	}
