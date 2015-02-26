@@ -26,7 +26,7 @@ welche Variante in welcher Situation die beste Lösung darstellt. Wann ist es si
 zu verwenden, wann sollte man auf das bewährte GRASS Plugin setzen und welche Stärken und Schwachstellen 
 bietet die Integration von GRASS Funktionalität über das WPS Plugin.
 	
-	Abschließend stellen wir die Aktuelle Entwicklung der Interaktion zwischen GRASS und QGIS vor und schauen in die Zukunft.}
+	Abschließend stellen wir die aktuelle Entwicklung der Interaktion zwischen GRASS und QGIS vor und schauen in die Zukunft.}
 
 
 \abstractZehn{Andreas Hocevar}{OpenLayers 3}{Stand, Neues und Zukünfiges}{%
@@ -86,7 +86,12 @@ bietet die Integration von GRASS Funktionalität über das WPS Plugin.
 
 \abstractZwei{Stefan Ziegler}{Kreisbogen in QGIS}{}{Neben den gängigen Vektorelementen (Punkt, Linie, Polygon) 
 	unterstützt QGIS neu Kreisbogengeometrien. Es ist jetzt möglich solche Geometrietypen 
-	(ST\_CircularString, ST\_CompoundCurve, ST\_CurvePolygon etc.) aus einer Postgis-Datenbank zu lesen, anzuzeigen, zu editieren und wieder zu speichern.}
+	(ST\_CircularString, ST\_CompoundCurve, ST\_CurvePolygon etc.) aus einer PostGIS-Datenbank zu lesen, 
+	anzuzeigen, zu editieren und wieder zu speichern. Gängige Vektorelemente eines Geografischen Informationssystems 
+	sind Punkt, Linie und Polygon. In der amtlichen Vermessung (amtliches Liegenschaftskataster) und anderen 
+	Themenkreisen ist zusätzlich der Kreisbogen zum Definieren und Verwalten von Objekten erlaubt. Dafür wurde 
+	die Geometrieklasse von QGIS neu entwickelt. Aktuelle Entwicklungen in anderen Projekten (ogr2ogr, GeoServer) 
+	zeigen, dass die Thematik “Kreisbogen” endgültig in der Open Source GIS Welt angekommen ist.}
 
 \abstractZehn{Christian Mayer und Marc Jansen}{GeoExt}{Ein ExtJS basiertes Rich-Client-WebGIS-Framework 
 	in Zeiten von AngularJS und Konsorten}{%
@@ -101,8 +106,8 @@ bietet die Integration von GRASS Funktionalität über das WPS Plugin.
 %
 \abstractEins{Claas Leiner}{Daten aus OSM extrahieren und in QGIS weiterverarbeiten}{Am Beispiel der Verteilung 
 	von Windanlagen in Deutschland}{%
-	Der Vortrag erläutert die Fragestellung am Beispiel der Verteilung von Windkraftanlagen in Deutschland. A
-	ngefangen vom Import der deutschlandweiten OSM-Daten in eine PostGis-Datenbank, über die Abfrage der 
+	Der Vortrag erläutert die Fragestellung am Beispiel der Verteilung von Windkraftanlagen in Deutschland. 
+	Angefangen vom Import der deutschlandweiten OSM-Daten in eine PostGIS-Datenbank, über die Abfrage der 
 	WKA-Standorte bis hin zur Präsentation der Verteilung in einer farbigen Flächendichtekarte, die aus 
 	einer interpolierten Rasteroberfläche erzeugt worden ist, welche die Anzahl der Windanlagen im Umkreis 
 	von 20\,km darstellt. Dabei kamen Abfrage- und Geoverarbeitungswerkzeuge aus QGIS sowie das GRASS-Modul 
@@ -149,7 +154,7 @@ bietet die Integration von GRASS Funktionalität über das WPS Plugin.
 	Mit Jsonix kann man ein XML Schema nehmen und daraus eine Mapping-Datei erzeugen.
 	Dieser Vortrag gibt eine Überblick von Jsonix und zeigt es Live in WMS, WFS, CSW sowie OL3 WPS Client Demos vor.}
 
-\abstractZehn{Oliver Tonnhofer}{Mapnik oder MapServer}{Wer macht die schönsten Kartenß}{%
+\abstractZehn{Oliver Tonnhofer}{Mapnik oder MapServer}{Wer macht die schönsten Karten?}{%
 	Mit Mapnik und MapServer stehen zwei OpenSource Kartenrenderer zur Verfügung, die in Geschwindigkeit, 
 	Funktionsumfang und Bildqualität kaum Wünsche übrig lassen. Aber welche Software nehme ich für mein Projekt?
 	
@@ -175,7 +180,7 @@ bietet die Integration von GRASS Funktionalität über das WPS Plugin.
 
 \abstractZwei{Christian Mayer}{Serverseitiges JavaScript und GIS}{Mit Node.js und npm die Welt beherrschen}{Der 
 	Vortrag gibt eine allgemeine Einführung in die Node.js-Welt und zeigt wie mit Node.js geo-relevante Probleme, 
-	wie das Einlesen von GIS-Datenformaten sowie die Verarbeitung von Geodaten möglich wird. Ebenso wird eine 
+	wie das Einlesen von GIS-Datenformaten sowie die Verarbeitung von Geodaten möglich wird. Ebenso werden eine 
 	Übersicht von nützlichen Node.js-Modulen aus dem GIS-Bereich sowie Beispielanwendungen vorgestellt.}
 
 \abstractZehn{Daniel Koch}{GeoServer in action}{Fortgeschrittene Möglichkeiten beim Einsatz des GeoServers}{%
@@ -282,16 +287,16 @@ bietet die Integration von GRASS Funktionalität über das WPS Plugin.
 % 16:30
 %
 \abstractEins{Hongchao Fan}{Die neue WebGL-basierte Plattform für OSM-3D}{}{%
-	In diesem Vortrag wird die technische Archtektur, das Funktiondesign und die 
+	In diesem Vortrag wird die technische Archtektur, das Funktionsdesign und die 
 	Implementierung der neue WebGL-basierte Plattform von OSM-3D präsentiert. 
 	Es werden interaktive Visualisierungen der 3D-Stadtmodelle und 3D-Geländemodelle 
 	demonstriert. Das neue Interface für interaktive Erfassungen von Dach- und 
 	Fassadenstrukturen wird vorgestellt und mit Beispielen demonstriert. 
 	Diskussion von Vorschlägen zur Verbesserungen der neuen Plattform. }
 
-\abstractZwei{Astrid Emde}{Mapbender\,3 für den einfachen Aufbau von WebGIS Anwendungen}{So einfach ist 
-	der Aufbau von WebGIS Anwendungen mit Mapbender3}{Mapbender3 ist eine Software zur einfachen 
-	Erstellung von WebGIS Anwendungen. Der Vortrag geht vor allem auf die neuen Komponenten in 
+\abstractZwei{Astrid Emde}{Mapbender\,3}{So einfach ist 
+	der Aufbau von WebGIS-Anwendungen mit Mapbender3}{Mapbender3 ist eine Software zur einfachen 
+	Erstellung von WebGIS-Anwendungen. Der Vortrag geht vor allem auf die neuen Komponenten in 
 	Mapbender3 ein und stellt diese vor. Anpassung an das eigne Layout, Suchen in eignen Daten und Rechteverwaltung werden thematisiert.}
 
 % Der kurze Abstract ist auch gut.
