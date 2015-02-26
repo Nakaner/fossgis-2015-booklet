@@ -15,7 +15,7 @@
 \newcommand{\aulaevent}[2]%
 {%
 	&
-	\multicolumn{3}{C{8cm}}{
+	\multicolumn{3}{c}{
 		\textbf{#1} (Aula) \par \emph{#2}
 	}
 }%
@@ -32,42 +32,51 @@
 \begin{landscape}
 \ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}
 \section*{Mittwoch}\label{mittwoch}
-	\begin{longtabu}{lZ{2.93cm}Z{2.93cm}Z{2.93cm}}
+
+\begin{center}
+	\begin{longtabu}{lZ{4cm}Z{4cm}}
 		& \multicolumn{1}{c}{\cellcolor{hellgruen} S\,1}
-		& \multicolumn{1}{c}{\cellcolor{hellgelb} S\,2}
-		& \multicolumn{1}{c}{\cellcolor{geoblau} S\,10} \tabularnewline
+		& \multicolumn{1}{c}{\cellcolor{hellorange} Aula} \tabularnewline
 		\endhead
 		10:30
 		\otherevent{Was ist Open-Source? Wie funktioniert das?}\coffeespace
 		\talk{}{}
 		\coffeespace\tabularnewline
 		\rowcolor{commongray}
-		12:00 & \multicolumn{3}{c}{%
+		12:00 & \multicolumn{2}{c}{%
 			\parbox[c]{24pt}{%
 				\includegraphics[height=10pt]{cafe}%
 			}
 			Pause} \tabularnewline
-		13:00 
-		\aulaevent{Eröffnung}{Dominik Helle und Olaf Knopp}
+		13:00
+		\talk{}{} 
+		\talk{Eröffnung}{}
 		\coffeespace\tabularnewline
 		13:30
-		\aulaevent{Nicht zuschauen -- mitmachen!}{Frederik Ramm}
+		\talk{}{}
+		\talk{Nicht zuschauen -- mitmachen!}{Frederik Ramm}
 		\coffeespace\tabularnewline
 		14:00
-		\aulaevent{Softwarewartung für Open-Source -- ein Widerspruch?}{Till Adams}
-		\coffeespace\tabularnewline
-		14:30
-		\aulaevent{Lightning Talks}{}
+		\talk{}{}
+		\talk{Softwarewartung für Open-Source -- ein Widerspruch?}{Till Adams}
 		\coffeespace\tabularnewline
 		\rowcolor{commongray}
-		15:00 & \multicolumn{3}{c}{%
+		15:00 & \multicolumn{2}{c}{%
 			\parbox[c]{24pt}{%
 				\includegraphics[height=10pt]{cafe}%
 			}
 			Kaffeepause} \tabularnewline
+	\end{longtabu}	
+
+
+	\begin{longtabu}{lZ{3cm}Z{3cm}Z{3cm}}
+		& \multicolumn{1}{c}{\cellcolor{hellgruen} S\,1}
+		& \multicolumn{1}{c}{\cellcolor{hellgelb} S\,2}
+		& \multicolumn{1}{c}{\cellcolor{geoblau} S\,10} \tabularnewline
+		\endhead
 		15:30
 		\talk{Welches Münster meinen sie?}{Marc Tobias Metten}
-		\talk{Herausforderungen bei der Umsetzung der INSPIRE-Richtlinie}{Jürgen Weichand}
+		\talk{Umsetzung der INSPIRE-Richtlinie}{Jürgen Weichand}
 		\talk{Neues von QGIS 2.8}{Horst Düster}
 		\coffeespace\tabularnewline
 		16:00
@@ -78,20 +87,21 @@
 		16:30
 		\talk{OSM-Tagging in Wikidata}{Tim Alder}
 		\talk{Geonetzwerk metropoleRuhr}{David Arndt}
-		\talk{Neues vom QGIS Print Composer und Atlas-Seriendruck}{Andreas Neumann}
+		\talk{QGIS Print Com\-poser und Atlas-Seriendruck}{Andreas Neumann}
 		\coffeespace\tabularnewline
 		17:00
 		\talk{Ein GeoWiki auf OSM-Basis}{Klaus Stein}
-		\talk{Spatial Index von Solr}{Tim Balschmiter}
+		\talk{Spatial Index von Solr}{Tim Balschmiter\vspace{0.5em}}
 		\talk{QField for QGIS}{Marco Bernasocchi}
-		\coffeespace\tabularnewline
+		\coffeespace\coffeespace\tabularnewline
 		\rowcolor{commongray}
-		17:30
-		\otherevent{ows.js Entwickler-Treffen}
-		\otherevent{Mapbender-Anwendertreffen}
-		\otherevent{xPlanBox-Anwendertreffen}
-		\coffeespace\tabularnewline
+		17:30 &
+		\multicolumn{3}{c}{%
+			\textbf{Anwendertreffen/BoFs} (siehe Seite \pageref{bof-mittwoch})}
+		\tabularnewline
 	\end{longtabu}	
+	\enlargethispage{0.5em}
+\end{center}
 \end{landscape}
 
 \renewcommand{\arraystretch}{1}
