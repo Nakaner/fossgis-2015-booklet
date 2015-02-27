@@ -1,6 +1,6 @@
 % Definitionen und Befehle
-\newcolumntype{Z}[1]{>{\raggedright\arraybackslash}p{#1}}%
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}%
+\newcolumntype{Z}[1]{>{\RaggedRight\arraybackslash}p{#1}}%
+\newcolumntype{C}[1]{>{\Centering\arraybackslash}p{#1}}%
 \newcommand{\talk}[2]%
 {%
 	& \textbf{#1} \newline \emph{#2}
@@ -54,13 +54,13 @@
 	\newsmalltimeslot{11:15 bis 12:45}
 	\workshop{Mapbender3-Workshop}{Astrid Emde, Toni Pignataro}{1}\workshopspace
 	\workshop{QGIS-Workshop}{Otto Dassau}{2}\workshopspace
-	\workshop{Datenmodel\-lierung mit Post\-greSQL/ PostGIS für QGIS}{Bernhard Ströbl}{3}\newpage
+	\workshop{Datenmodel\-lierung mit \mbox{PostgreSQL}/PostGIS für QGIS}{Bernhard Ströbl}{3}\newpage
 	
 \section*{Workshops am Donnerstag}
 	\newsmalltimeslot{14:00 bis 15:30}
 	\workshop{MapServer Pro-Tipps}{Jörg Thomsen, Toni Pignataro}{1}\workshopspace
 	\workshop{Projektions\-ma\-na\-gement mit QGIS}{Claas Leiner}{2}\workshopspace
-	\workshop{Einführungswork\-shop OpenLayers 3}{Marc Jansen}{3}\workshopspace
+	\workshop{Einführungswork\-shop \mbox{OpenLayers}~3}{Marc Jansen}{3}\workshopspace
 	\newsmalltimeslot{16:00 bis 17:30}
 	\workshop{pgRouting-Workshop}{Daniel Kastl}{1}\workshopspace
 	\workshop{QGIS-Server}{Andreas Neumann, Bernhard Ströbl}{2}\workshopspace
@@ -77,9 +77,8 @@
 \begin{landscape}	
 \ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}
 \section*{Vorträge am Mittwoch}\label{mittwoch}
-
-\begin{center}
-	\begin{longtabu}{lZ{4cm}Z{4cm}}
+\noindent\begin{center}
+	\noindent\begin{longtabu}{lZ{4.7cm}Z{4.7cm}}
 		& \multicolumn{1}{c}{\cellcolor{hellgruen} S\,1}
 		& \multicolumn{1}{c}{\cellcolor{hellorange} Aula} \tabularnewline
 		\endhead
@@ -96,7 +95,7 @@
 		13:00
 		\talk{}{} 
 		\talk{Eröffnung}{}
-		\coffeespace\tabularnewline
+		\tabularnewline
 		13:30
 		\talk{}{}
 		\talk{Nicht zuschauen -- mitmachen!}{Frederik Ramm}
@@ -125,7 +124,7 @@
 		\talk{Neues von QGIS 2.8}{Horst Düster}
 		\coffeespace\tabularnewline
 		16:00
-		\talk{Offene Geodaten -- Lage von Orten im Vergleich}{Thomas Brinkhoff}
+		\talk{Offene Geodaten -- Lage von Orten im Vergleich}{Thomas Brinkhoff}\coffeespace
 		\talk{GeoPortal.rlp}{Armin Retterath}
 		\talk{QGIS-Plugins}{Pirmin Kalberer}
 		\coffeespace\tabularnewline
