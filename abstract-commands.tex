@@ -14,7 +14,6 @@
 \def\donnerstag{Donnerstag}
 \def\freitag{Freitag}
 \newcommand{\setpagebackground}{ %
-%	\ifthispageodd{\ThisCenterWallPaper{1.0}{freitag-ungerade}}{\ThisCenterWallPaper{1.0}{freitag-gerade}}%
 	\ifthenelse{\equal{\konferenztag}{\mittwoch}}{ %
 		\ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}%
 	}{}
@@ -31,6 +30,7 @@
 \newcolumntype{Y}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 %% Längen für Sponsorenbox und Titelboxen
+\newcommand{\raumzwei}{S\,2}
 \newlength{\titleboxwidth}
 \setlength{\titleboxwidth}{\textwidth}
 \advance\titleboxwidth by -6pt
@@ -47,22 +47,15 @@
 	\noindent\fcolorbox{white}{#5}{\parbox{\titleboxwidth}{%
 		\noindent\begin{tabu}{X[5L]r}
 			\isspeakerempty{#1}{#2}{#6}
-%			\emph{#1} % Sprecher
-%			&
-%			\talktime
-%			\tabularnewline
-%			{\par\noindent\large \sectfont #2}% % Titel
-%			&
-%			#6
-%			\tabularnewline
 			\issubtitleempty{#3}
-%			\multicolumn{2}{p{\linewidth}}{\issubtitleempty{#3}}
-%			\tabularnewline
 		\end{tabu}%
 	}}
 	%
 	\isabstractempty{#4}%
-	\setpagebackground%
+	\ifthenelse{\equal{#6}{\raumzwei}}%
+		{}% bei S2 keinen Seitenhintergrund setzen
+		{\setpagebackground%
+	}
 	\vspace{0.5em}% Abstand zum nächsten Talk, auch wenn es keinen Abstract gibt
 	\setlength\tabcolsep{6pt} % Spaltenpadding wieder auf Default setzen
 }
@@ -108,7 +101,6 @@
 \makeatletter
 \newcommand{\isabstractempty}[1]{%
 		\vspace{0.5em}\newline%
-		%\par\noindent 
 		#1 \par% % Abstract
 		\vspace{1.5em}% Abstand zum nächsten Talk, auch wenn es einen Abstract gibt
 }
@@ -157,7 +149,6 @@
 }
 
 % Abstract Senatssaal
-%TODO Farbe ändern
 \newcommand{\abstractSenatssaal}[4]%
 {%
 	\setabstract{#1}{#2}{#3}{#4}{dezentrot}{Senatssaal}
