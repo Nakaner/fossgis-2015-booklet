@@ -43,7 +43,7 @@
 	Hacker lassen sich von den OSM-Daten zu neuer Software inspirieren und zeigen damit, was mit den freien Daten 
 	alles möglich ist. Sogar einige Unternehmen entwickeln mittlerweile Open-Source-Software, die in OpenStreetMap eingesetzt werden kann.
 	
-	Privatleute und Organisationen werden Mitglied im FOSSGIS e.V. oder der OSM Foundation und stärken so die Position 
+	Privatleute und Unternehmen werden Mitglied im FOSSGIS e.V. oder der OSM Foundation und stärken so die Position 
 	dieser institutionellen Stützen des OSM-Projekts. Interessierte bringen sich in die Arbeit in verschiedenen 
 	Gremien der Vereine ein -- zum Beispiel bei den \glqq Working Groups\grqq\ der OSM Foundation, hier werden immer Leute gesucht.
 	
@@ -69,7 +69,7 @@
 	Verletzung des Open-Source-Grundsatzes ist, wenn eine Firma, die maßgeblich hinter der 
 	Entwicklung einer oder mehrerer Open Source (GIS-)Projekten steht, eine solche Wartung nach 
 	proprietärem Geschäftsmodell zu einem jährlichen Fixpreis anbietet? Kann das Angebot von 
-	Betriebssicherheit und auch Support dazu führen, das Open Source eher eingesetzt wird? 
+	Betriebssicherheit und auch Support dazu führen, dass Open Source eher eingesetzt wird? 
 	Würde ein solches Angebot überhaupt Chancen beim Kunden haben -- da sie ja anders als 
 	beim proprietären Geschäftsmodell nicht obligatorisch wäre (sein kann!)? De Facto bieten 
 	Firmen solche Modelle bereits an, es stellt sich die Frage, ob der Markt reif ist für 
@@ -84,12 +84,14 @@
 \setlength{\itemsepdefault}{\itemsep}
 \abstractAula{}{Lightning Talks}{}{\vspace{-2em}
 	\begin{itemize}
+		\RaggedRight
 		\setlength{\itemsep}{-2pt} % Aufzählungspunktabstand auf 0
 		\item Mila Frerichs: Civic Tech in Deutschland
 		\item Arndt Brenschede:  Intermodales ÖPNV-Rad-Fuß-Routing
 		\item Robert Buchholz:  Hierarchische Geometrien für OSM-Daten
 		\item Arnulf Christl:  FOSSGIS in der Hochschule
 	\end{itemize}
+	\justifying
 	}
 %
 % 15:30
@@ -98,55 +100,57 @@
 \abstractEins{Marc Tobias Metten}{Welches Münster meinen sie?}{Wie man Geocodern beibringt Orte mit gleichen 
 	Namen richtig zu sortieren}{%
 	Wie sortiert man Orte nach Wichtigkeit, wenn sie den gleichen Namen haben? Wir schauen uns Daten zu 
-	Suchverhalten, Größe, Bevölkerungsdichte, Tagging in OpenStreetMap und Verlinkung in Wikipedia/Wikidata 
-	anhand des Nominatim Geocoders an.
+	Suchverhalten, Größe, Bevölkerungsdichte, Tagging in OSM und Verlinkung in Wikipedia/Wikidata 
+	anhand von Nominatim an.
 	
-	Der Nominatim Geocoder nutzt OpenStreetMap, minütlich aktualisiert. Die Suchergebnisse werden nach Relevanz 
-	sortiert. Einige Faktoren, wie dass Ländernamen wichtiger sind als Strassennamen sind jedem klar. Auf Mailinglisten 
+	Der Nominatim Geocoder nutzt OSM, minütlich aktualisiert. Die Suchergebnisse werden nach Relevanz 
+	sortiert. Einige Faktoren, wie dass Ländernamen wichtiger sind als Straßennamen sind jedem klar. Auf Mailinglisten 
 	kommt aber hin und wieder die Frage auf warum genau ein Ort wichtiger eingeschätzt wird als ein anderer.
 	
-	Nominatim nutzt u.a. einen vorberechneten Score (numerischer Wert), der auf den Verlinkungen innerhalb 
+	Nominatim nutzt u.\,a. einen vorberechneten Score, der auf den Verlinkungen innerhalb 
 	Wikipedia basiert. Die erste Version sogar auf Seitenabrufen. Das hat Vor- und Nachteile (und Bugs).}
 
+% wir müssen hier Platz sparen, sonst gibt es eine Überschrift am Seitenende!
+\vspace{-1em}
 \abstractZwei{Jürgen Weichand}{Herausforderungen bei der Umsetzung der INSPIRE-Richtlinie}{}{Der Vortrag handelt 
-	von Datenspezifikationen, komplexen Feature-Modellen, Open-Source-Softwareprodukten für INSPIRE und Darstellungs- und Downloaddiensten.
+	von Datenspezifikationen, kom\-plexen Feature-Modellen, Open-Source-Softwareprodukten für INSPIRE und Darstellungs- und Downloaddiensten.\enlargethispage{0.5em}
 	
-	Wie unterscheiden sich einfache und komplexe Feature-Modelle? Welche Lösungsansätze gibt es bei der 
-	Bereitstellung von komplexen Feature-Modellen? Mit welchen Open-Source-Softwareprodukten ist die 
+	\noindent Wie unterscheiden sich einfache und komplexe Feature-Modelle? Welche Lösungsansätze gibt es bei der 
+	Bereitstellung von komplexen Feature-Modellen? Mit welchen Open-Source-Produkten ist die 
 	Bereitstellung von INSPIRE-konformen Daten möglich?
 	
-	Weiterhin wird am Beispiel QGIS auf vorhandene Einschränkungen bei der Verwendung von Geodaten auf 
+	Des Weiteren wird am Beispiel QGIS auf vorhandene Einschränkungen bei der Verwendung von Geodaten auf 
 	Grundlage von GML-Anwendungsschemata eingegangen.}
 
-\abstractZehn{Horst Düster}{Neues von QGIS 2.8}{}{%
-	Im Vortrag werden die wichtigsten neuen Features von QGIS 2.6 und der kommenden Version 2.8 vorgestellt. 
-	Seit der FOSSGIS 2014 in Berlin hat sich QGIS, dank der Investitionen der QGIS Anwender und der Spenden 
+\abstractZehn{Horst Düster}{Neues von QGIS\,2.8}{}{%
+	Im Vortrag werden die wichtigsten neuen Features von QGIS\,2.6 und der kommenden Version 2.8 vorgestellt. 
+	Seit der FOSSGIS 2014 in Berlin hat sich QGIS, dank der Investitionen der QGIS-Anwender und der Spenden 
 	vieler Sponsoren, erheblich weiter entwickelt. Im Vortrag werden die wichtigsten neuen Features von 
-	QGIS 2.6 und der kommenden Version 2.8 vorgestellt. Ausserdem wird ein Blick auf die künftige Entwicklung in Richtung QGIS 3 geworfen.}
+	QGIS\,2.6 und der kommenden Version 2.8 vorgestellt. Außerdem wird ein Blick auf die künftige Entwicklung in Richtung QGIS\,3 geworfen.}
 
 %
 % 16:00
 \newtimeslot{16:00}
 %
-\abstractEins{Thomas Brinkhoff}{Offene Geodaten-Lage von Orten im Vergleich}{}{Offene Geodaten bezüglich der Lage von 
-	Orten (GeoNames Geographical Database, OSM, Wikipedia) werden vergleichend miteinander und in Bezug zu offenen amtlichen Geodaten untersucht.
+\abstractEins{Thomas Brinkhoff}{Offene Geodaten -- Lage von Orten im Vergleich}{}{Offene Geodaten bezüglich der Lage von 
+	Orten (OpenStreetMap, GeoNames Geographical Database, Wikipedia) werden vergleichend miteinander und in Bezug zu offenen amtlichen Geodaten untersucht.
 	
 	Untersucht wurden die Nutzbarkeit der Daten, d.\,h. Einfachheit des Zugriffs, bereitgestellte Attribute 
 	und Zuordnungsmöglichkeiten zu einem gegebenen Ort, die Vollständigkeit der Daten und die Qualität der Koordinaten.}
 
 %TODO könnte man noch ein klein wenig verlängern
-\abstractZwei{Armin Retterath}{GeoPortal.rlp}{Ein Erfolgsmodell für den Einsatz von FOSS in der öffentlichen Verwaltung}{Dieser 
+\abstractZwei{Armin Retterath}{GeoPortal.rlp}{Ein Erfolgsmodell für den Einsatz von FOSS in der öffentlichen Verwaltung}{Der 
 	Vortrag illustriert anhand der Entstehungsgeschichte des rheinland-pfälzischen Geoportals, das mittlerweile auch 
 	im Saarland und in Hessen eingesetzt wird, welches immense Potential im Einsatz von FOSS-Software in der 
 	öffentlichen Verwaltung steckt. Der Vortrag diskutiert neben unerwarteten positiven Nebenwirkungen wie der verstärkten 
-	Zusammenarbeit der Verwaltungen auch Risiken und Probleme, die in der 9-jährigen Geschichte des Projekts zu bewältigen waren.}
+	Zusammenarbeit der Verwaltungen auch Risiken und Probleme, die in der neunjährigen Geschichte des Projekts zu bewältigen waren.}
 
-\abstractZehn{Pirmin Kalberer}{QGIS Plugins}{Must-Haves, Fachlösungen und Geheimtipps}{Eine grosse Stärke von QGIS ist die einfache, 
+\abstractZehn{Pirmin Kalberer}{QGIS-Plugins}{Must-Haves, Fachlösungen und Geheimtipps}{Eine grosse Stärke von QGIS ist die einfache, 
 	aber umfassende Erweiterbarkeit mittels Python Plugins. In kompakter Form wird eine Selektion aus der grossen Menge 
 	an öffentlich verfügbaren Plugins aus verschiedensten Bereichen vorgestellt. Die Auswahl geht vom bestens bekannten 
-	OpenLayer-Plugin und weiteren \glqq Must-Haves\grqq  über wenig bekannte Core-Plugins wie dem Offline Editing Plugin bis zu 
+	OpenLayer-Plugin und weiteren \glqq Must-Haves\grqq\ über wenig bekannte Core-Plugins wie dem Offline Editing Plugin bis zu 
 	Insidertipps wie dem Remote Debugging Plugin. Neben nützlichen Helfern werden auch umfangreiche Fachlösungen kurz vorgestellt. 
-	Es werden Anwendungsbereiche von der Datenerfassung bis zur Plugin-Entwicklung abgedeckt, aber auch Tipps gegeben, 
+	Es werden Anwendungsbereiche von der Datenerfassung bis zur Plugin-Entwick\-lung abgedeckt, aber auch Tipps gegeben, 
 	wie man selbst ein passendes Plugin findet und evaluiert.}
 	
 % 16:30
@@ -163,7 +167,10 @@
 	das Matching zwischen beiden Projekten schlecht funktioniert. Teilweise fehlen Wkipedia-Artikel. Eine 1:1-Umsetzung 
 	des OSM-Wikis kann der Link zur Wikipedia nicht sein, somit bleibt weiterhin das OSM-Wiki die verbindliche Beschreibungsseite des OSM-Taggings.}
 
-\abstractZwei{David Arndt}{Geonetzwerk metropoleRuhr}{Die Geoinformationsplattform für das Ruhrgebiet}{Das Geonetzwerk 
+% wir müssen hier Platz sparen, sonst gibt es eine Überschrift am Seitenende!
+\vspace{-0.8em}
+\abstractZwei{David Arndt}{Geonetzwerk metropoleRuhr}{Die Geoinformationsplattform für das Ruhrgebiet}{
+	Das Geonetzwerk 
 	metropoleRuhr ist eine Kooperation der Kreise und kreisfreien Städte im Ruhrgebiet mit dem Regionalverband Ruhr. 
 	Ziele sind GDI-Aufbau, Präsentation von Geodaten im eigenen Geoportal, Metadatenpflege, gegenseitige technische 
 	Unterstützung und gemeinsame Umsetzung der INSPIRE-Richtlinie.}
@@ -181,8 +188,8 @@
 \newtimeslot{17:00}
 %
 
-\abstractEins{Klaus Stein}{Ein GeoWiki auf OSM-Basis}{}{%
-	Wikis bieten editierbare Informationen in Text und Bild, OSM geographische Objekte u.a. in Kartenform. 
+\abstractEins{Klaus Stein}{Ein GeoWiki auf OpenStreetMap-Basis}{}{%
+	Wikis bieten editierbare Informationen in Text und Bild, OSM geographische Objekte u.\,a. in Kartenform. 
 	Unser GeoWiki leistet eine enge Integration beider Konzepte, indem Textstellen direkt und interaktiv auf Geoobjekte verweisen und umgekehrt.
 	
 	Die referenzierten und dargestellten Geoobjekte müssen dabei nicht zwingend in der OSM-Datenbank vorliegen, 
@@ -193,14 +200,14 @@
 	Am Beispiel des Geoportal.de sollen Erfahrungen und Einblicke in die Verwendung des Spatial Index mit Solr gegeben werden.
 	
 	Die GDI-DE stellt Beschreibungen und Zugangsdaten zu Geodaten von Bund, Ländern und Kommunen bereit, welche über das Geoportal.de 
-	recherchiert werden können. Über eine Volltextsuche können derzeit ca. 130000 Datensätze gefunden werden. Für einen performanten 
+	recherchiert werden können. Über eine Volltextsuche können derzeit ca. 130\,000 Datensätze gefunden werden. Für einen performanten 
 	Zugriff auf die Datensätze wird die Open-Source-Software Solr eingesetzt. Derzeit erfolgt die Suche ausschließlich über die 
 	themenbezogenen Inhalte der Metadaten.
 	}
 
 % Was für ein Laberfassel-Abstract. Jedes Wort mehr ist heiße Marketingluft.
 \abstractZehn{Marco Bernasocchi}{QField for QGIS}{}{%
-	QField ist die native Benutzerschnittstelle für tragbare Touchscreengeräte und bietet eine vollwertige mobile Geodaten-Verwaltungsinfrastruktur. 
+	QField ist die native Benutzerschnittstelle für tragbare Touchscreengeräte und bietet eine vollwertige Geo\-daten-Verwaltungsinfrastruktur. 
 	Das Synchronisationtool ermöglicht einen nahtlosen Datenaustausch zwischen dem mobilen Gerät und der vorhandenen Infrastruktur.}
 
 % Platz für Silber-Sponsor QGIS Enterprise
@@ -224,7 +231,7 @@
 \thispagestyle{empty}
 \section*{Social Event}
 \label{social-event}
-\vspace{-0.3em}
+\vspace{-0.3em}\RaggedRight
 Für die Abendveranstaltung%, zu der die Konferenzteilnehmer Gelegenheit haben, sich bei Essen und Getränken 
 %mit anderen Konferenzteilnehmern auszutauschen, 
 haben wir das Schloss\-gar\-ten\-café Münster gebucht. Zu einem 
@@ -238,14 +245,14 @@ Preis von 35\,Euro gibt es Buffet und Getränke von 19:00 bis 23:00 Uhr. Buchung
 	Salatbuffet mit Dressingvariationen $\blackdiamond$
 	Gurkensalat mit Dill und Möhren-Apfelsalat
 	
-	\noindent \textbf{Hauptgang}\\
+	\vspace{0.3em}\noindent \textbf{Hauptgang}\\
 	Schweinebraten gefüllt mit Spinat und Mozzarella dazu Rahmsauce $\blackdiamond$
 	Truthahngeschnetzeltes in einer fruchtigen Currysauce $\blackdiamond$
-	Kartoffelgratin, Reis $\blackdiamond$
-	Mandelbroccoli, grüne Bohnen $\blackdiamond$
+	Kartoffelgratin $\blackdiamond$ Reis $\blackdiamond$
+	Mandelbroccoli $\blackdiamond$ grüne Bohnen $\blackdiamond$
 	Farfalle in einer kräftigen Tomatenkräutersauce
 	
-	\noindent \textbf{Dessert}\\
+	\vspace{0.3em}\noindent \textbf{Dessert}\\
 	Westfälische Herrencreme \\
 	Rote Beerengrütze mit Vanillesauce
 %\end{multicols}
