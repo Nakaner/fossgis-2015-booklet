@@ -29,9 +29,9 @@
      inkscape:window-height="480"
      id="namedview13"
      showgrid="false"
-     inkscape:zoom="1.4069956"
-     inkscape:cx="198.00088"
-     inkscape:cy="187.26429"
+     inkscape:zoom="1.9897923"
+     inkscape:cx="236.95438"
+     inkscape:cy="113.18157"
      inkscape:current-layer="svg2" />
   <metadata
      id="metadata8">
@@ -41,7 +41,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -124,7 +124,7 @@
   <rect
      style="opacity:1;fill:#ffffff;fill-opacity:0.4910486;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.86360002;stroke-dasharray:none;stroke-opacity:1"
      id="rect4151"
-     width="150.3876"
+     width="193.6082"
      height="11.056431"
      x="129.28981"
      y="540.25739" />
@@ -139,5 +139,5 @@
        id="tspan4149"
        x="130.67195"
        y="548.4823"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:8.75px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Semi-Condensed'">Daten © OpenStreetMap-Mitwirkende</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:8.75px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Semi-Condensed'">Daten © OpenStreetMap-Mitwirkende, ODbL 1.0</tspan></text>
 </svg>
