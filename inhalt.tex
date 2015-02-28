@@ -10,8 +10,13 @@
 \vspace*{0.35em}%
 \noindent Workshops am Freitag \dotfill \pageref{freitag-workshops}
 
+% Seitennummer der Karte berechnen
+\newcounter{kartenseite}
+\setcounter{kartenseite}{\getpagerefnumber{karte}}
+\stepcounter{kartenseite}
+
 \vspace*{0.35em}%
-\noindent Wegskizze zu den Workshopräumen \dotfill \pageref{karte}
+\noindent Wegskizze zu den Workshopräumen \dotfill \arabic{kartenseite}
 
 \vspace*{0.35em}%
 \noindent Vorträge am Mittwoch \dotfill \pageref{mittwoch}
